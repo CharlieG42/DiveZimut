@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string id="app_name">DiveZimut</string>
+    <string id="app_description">Exercices de respiration guidés pour Garmin</string>
+    
+    <!-- Exercise names -->
+    <string id="exercise_square">Carré</string>
+    <string id="exercise_triangle">Triangle</string>
+    <string id="exercise_478">4-7-8</string>
+    <string id="exercise_coherence">Cohérence</string>
+    
+    <!-- Menu items -->
+    <string id="menu_settings">Réglages</string>
+    <string id="menu_history">Historique</string>
+    <string id="menu_about">À propos</string>
+    
+    <!-- Settings -->
+    <string id="settings_default_duration">Durée par défaut</string>
+    <string id="settings_favorite_exercise">Exercice favori</string>
+    <string id="settings_vibration">Vibrations</string>
+    
+    <!-- Instructions -->
+    <string id="instruction_inspire">Inspire</string>
+    <string id="instruction_hold_full">Retien (plein)</string>
+    <string id="instruction_expire">Expire</string>
+    <string id="instruction_hold_empty">Retien (vide)</string>
+</resources>
