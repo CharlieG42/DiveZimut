@@ -1,0 +1,5 @@
+{
+    "connectiq.sdk.path": "C:/Program Files (x86)/Garmin/ConnectIQ",
+    "connectiq.device": "instinct2x",
+    "connectiq.debug": true
+}
