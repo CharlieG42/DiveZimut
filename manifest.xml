@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xmlschemas/ConnectIQ/v1">
+    <iq:application>
+        <iq:name>DiveZimut</iq:name>
+        <iq:description>Exercices de respiration guidés pour Garmin Instinct 2X. Pratiquez la respiration Carré, Triangle, 4-7-8 et Cohérence Cardiaque directement depuis votre montre.</iq:description>
+        <iq:author>WildZimut</iq:author>
+        <iq:version>1.0.0</iq:version>
+        <iq:targetDevices>
+            <iq:device>instinct2x</iq:device>
+            <iq:device>instinct2</iq:device>
+        </iq:targetDevices>
+        <iq:permissions>
+            <iq:usesPermission>VIBRATE</iq:usesPermission>
+            <iq:usesPermission>FILE_SYSTEM</iq:usesPermission>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language>fr</iq:language>
+            <iq:language>en</iq:language>
+        </iq:languages>
+    </iq:application>
+</iq:manifest>
