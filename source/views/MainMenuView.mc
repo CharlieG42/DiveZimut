@@ -3,9 +3,10 @@ using Toybox.Graphics;
 using Toybox.UI;
 using Toybox.UI.Menu2;
 
-// Main menu view
+// Main menu view - updated with apnea tables
 class MainMenuView extends Menu2 {
     var exercises;
+    var apneaTables;
     var userSettings;
     
     function initialize() {
@@ -17,7 +18,11 @@ class MainMenuView extends Menu2 {
         // Load all exercises
         exercises = Exercise.getAllExercises();
         
-        // Add exercises to menu
+        // Load all apnea tables
+        apneaTables = ApneaTable.getAllApneaTables();
+        
+        // Add breathing exercises to menu
+        this.addItem("--- RESPIRATION ---", null);
         for (var i = 0; i < exercises.size(); i++) {
             var exercise = exercises[i];
             var displayName = exercise.name;
@@ -27,18 +32,41 @@ class MainMenuView extends Menu2 {
             this.addItem(displayName, :onExerciseSelected);
         }
         
-        // Add settings and history options
-        this.addItem("---", null);
-        this.addItem("Reglages", :onSettingsSelected);
+        // Add apnea tables to menu
+        this.addItem("--- TABLES APNÉE ---", null);
+        for (var j = 0; j < apneaTables.size(); j++) {
+            var table = apneaTables[j];
+            var tableDisplayName = table.name;
+            if (table.name == userSettings.favoriteApneaTable) {
+                tableDisplayName = tableDisplayName + " *";
+            }
+            this.addItem(tableDisplayName, :onApneaTableSelected);
+        }
+        
+        // Add settings and other options
+        this.addItem("--- RÉGLAAGES ---", null);
+        this.addItem("Réglages", :onSettingsSelected);
         this.addItem("Historique", :onHistorySelected);
-        this.addItem("A propos", :onAboutSelected);
+        this.addItem("À propos", :onAboutSelected);
     }
     
     function onExerciseSelected(index) {
-        if (index < exercises.size()) {
-            var exercise = exercises[index];
+        // Adjust index for the separator items
+        var exerciseIndex = index - 1;  // Skip the first separator
+        if (exerciseIndex >= 0 && exerciseIndex < exercises.size()) {
+            var exercise = exercises[exerciseIndex];
             var exerciseView = new ExerciseView(exercise);
             View.setView(exerciseView);
+        }
+    }
+    
+    function onApneaTableSelected(index) {
+        // Calculate table index: skip breathing exercises + 2 separators
+        var tableIndex = index - exercises.size() - 2;
+        if (tableIndex >= 0 && tableIndex < apneaTables.size()) {
+            var table = apneaTables[tableIndex];
+            var tableView = new ApneaTableView(table);
+            View.setView(tableView);
         }
     }
     
