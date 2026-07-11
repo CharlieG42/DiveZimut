@@ -1,96 +1,92 @@
 # DiveZimut
 
-## Application de Respiration pour Garmin Instinct 2X
+## Application Connect IQ pour Garmin Instinct 2X
 
-DiveZimut est une application Connect IQ pour les montres Garmin (Instinct 2X, Instinct 2) qui propose des exercices de respiration guidés pour gérer le stress, améliorer la concentration et favoriser le bien-être.
+DiveZimut est une application complete pour les montres Garmin (Instinct 2X, Instinct 2) qui propose des exercices de respiration et des tables d apnee pour l entrainement.
 
-## Fonctionnalités
+## Fonctionnalites
 
-- **4 exercices de respiration** :
-  - **Carré (Box Breathing)** : 4 phases égales (inspiration, rétention, expiration, rétention)
-  - **Triangle** : 3 phases (inspiration, expiration, rétention)
-  - **4-7-8** : Technique de relaxation profonde
-  - **Cohérence Cardiaque** : Synchronisation respiration/rythme cardiaque
+### Exercices de Respiration
 
-- **Personnalisation** :
-  - Réglage de la durée de chaque phase
-  - Sélection dun exercice favori
-  - Activation/désactivation des vibrations
+- Carre (Box Breathing): 4 phases egales (Inspire, Retien plein, Expire, Retien vide)
+- Triangle: 3 phases (Inspire, Expire, Retien vide)
+- 4-7-8: Inspire 4s, Retien 7s, Expire 8s
+- Coherence Cardiaque: Inspire 5s, Expire 5s
 
-- **Historique** : Suivi des sessions passées
+### Tables d Apnee
 
-- **Interface intuitive** : Navigation simple avec les boutons de la montre
+- CO2 Debutant: 8 cycles a 50% du max, recuperation 2:00 a 1:30
+- CO2 Intermediaire: 10 cycles a 60% du max, recuperation 1:50 a 1:00
+- CO2 Avance: 12 cycles a 70% du max, recuperation 1:30 a 0:45
+- CO2 Pyramide: 7 cycles, duree progressive puis regressive
+- O2 Debutant: 5 cycles a 70% du max, recuperation 3:00
+- O2 Intermediaire: 6 cycles a 80% du max, recuperation 3:00
+- O2 Avance: 8 cycles a 85% du max, recuperation 2:30
+- O2 Progressive: 6 cycles, duree progressive
+- Mixte Equilibree: 8 cycles (4 CO2 + 4 O2), recuperation 2:00
+- Mixte Avancee: 10 cycles (5 CO2 + 5 O2), recuperation 2:00
+
+## Utilisation
+
+### Pour les exercices de respiration
+1. Selectionnez un exercice dans le menu principal
+2. Suivez les instructions a l ecran
+3. Utilisez UP/DOWN pour mettre en pause/reprendre
+4. Utilisez BACK pour quitter
+
+### Pour les tables d apnee
+1. Configurez votre temps maximal d apnee dans les reglages
+2. Selectionnez une table adaptee a votre niveau
+3. Suivez le protocole: Preparez-vous, Apnee, Recuperez
+4. Repetez pour le nombre de cycles prevu
+
+## Regages
+
+- Duree par defaut (respiration): 1-20 secondes
+- Exercice favori (respiration)
+- Vibrations: ON/OFF
+- Temps max apnee: 30s - 10:00
+- Tolerance CO2: 1-5 (Debutant a Avance)
+- Efficacité O2: 1-5 (Debutant a Avance)
+- Table apnee favori
 
 ## Installation
 
-1. **Prérequis** :
-   - Une montre Garmin Instinct 2 ou Instinct 2X
-   - Lapplication Garmin Connect sur votre smartphone
+1. Telechargez l application depuis Garmin Connect IQ Store
+2. Installez sur votre montre Instinct 2X
+3. Configurez vos reglages
+4. Commencez une seance
 
-2. **Installation** :
-   - Ouvrez lapplication **Garmin Connect IQ Store** sur votre smartphone ou sur [apps.garmin.com](https://apps.garmin.com)
-   - Recherchez DiveZimut
-   - Installez lapplication sur votre montre
+## Securite
 
-3. **Lancement** :
-   - Sur votre montre, allez dans Menu > Apps > DiveZimut
-   - Sélectionnez un exercice et suivez les instructions
+### Regles d Or
+1. Toujours avec un partenaire (meme a sec)
+2. Jamais dans l eau sans surveillance
+3. Ne jamais hyperventiler avant une apnee
+4. Respecter les temps de recuperation
+5. Arreter en cas de vertiges, nausées, ou contractions violentes
+6. Ne pas tenir plus de 30s apnes les premieres contractions
+7. Bien s hydrater
 
-## Développement
+### Contre-indications
+- Fatigue extreme
+- Maladie ou fievre
+- Problemes cardiaques
+- Epilepsie
+- Grossesse
 
-### Prérequis
-- [Connect IQ SDK](https://developer.garmin.com/connect-iq/sdk/)
-- [VS Code](https://code.visualstudio.com/) avec lextension Connect IQ
-- Compte développeur Garmin
-
-### Structure du projet
-```
-DiveZimut/
-├── manifest.xml          # Configuration de lapplication
-├── source/
-│   ├── DiveZimutApp.mc   # Point dentrée
-│   ├── models/
-│   │   ├── Exercise.mc   # Modèle des exercices
-│   │   └── UserSettings.mc # Gestion des préférences
-│   └── views/
-│       ├── MainMenuView.mc
-│       ├── ExerciseView.mc
-│       ├── SettingsView.mc
-│       ├── HistoryView.mc
-│       └── AboutView.mc
-└── README.md
-```
-
-### Compilation et test
-1. Ouvrez le projet dans VS Code
-2. Configurez lémulateur Instinct 2X
-3. Compilez avec Ctrl+Shift+B
-4. Testez sur lémulateur ou sur votre montre
-
-### Publication
-1. Créez un compte sur [Garmin Developer Portal](https://developer.garmin.com/)
-2. Soumettez votre application pour validation
-3. Une fois approuvée, elle sera disponible sur le Connect IQ Store
-
-## Roadmap
-
-- [x] MVP avec exercices de base (Carré, Triangle)
-- [x] Ajout des exercices 4-7-8 et Cohérence Cardiaque
-- [x] Personnalisation des durées
-- [x] Historique des sessions
-- [ ] Intégration du capteur de rythme cardiaque (futur)
-- [ ] Synchronisation avec Garmin Connect
-- [ ] Mode Défi avec enchaînement aléatoire
-- [ ] Thèmes personnalisables
-
-## Licence
-
-MIT License
+## Precautions
+- La recuperation doit etre au moins 2x la duree de l apnee
+- Ne jamais reduire la recuperation en dessous de 1:00
+- Ecouter son corps et ses sensations
+- Connaître ses limites
 
 ## Contact
+Email: charlie@wildzimut.com
+GitHub: https://github.com/CharlieG42/DiveZimut
 
-Pour toute question ou suggestion : charlie@wildzimut.com
+## Licence
+MIT License
 
 ---
-
-DiveZimut - Respirez mieux, vivez mieux.
+DiveZimut - Respirez mieux, plongez plus loin.
