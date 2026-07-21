@@ -37,7 +37,7 @@ class AboutView extends View {
         dc.drawText(width / 2, y, "Exercices de respiration", Graphics.TEXT_JUSTIFY_CENTER);
         y += lineHeight;
         
-        dc.drawText(width / 2, y, "pour Garmin Instinct 2X", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, y, "et tables d apnee", Graphics.TEXT_JUSTIFY_CENTER);
         y += lineHeight * 2;
         
         dc.drawText(width / 2, y, "Developpe par:", Graphics.TEXT_JUSTIFY_CENTER);
