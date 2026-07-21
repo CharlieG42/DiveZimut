@@ -28,47 +28,36 @@ class SettingsView extends View {
         var width = dc.getWidth();
         var height = dc.getHeight();
         
-        // Clear screen
         dc.setColor(0, 0, 0);
         dc.fillRectangle(0, 0, width, height);
         
-        // Draw title
         dc.setColor(255, 255, 255);
         dc.setFont(Graphics.FONT_MEDIUM);
         dc.drawText(width / 2, 10, "REGLAAGES", Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw settings items
         var y = 35;
         var lineHeight = 25;
         
-        // 1. Default duration for breathing exercises
         drawSettingItem(dc, y, "Duree defaut resp.", userSettings.defaultDuration + "s", selectedItem == 0);
         y += lineHeight;
         
-        // 2. Favorite breathing exercise
         drawSettingItem(dc, y, "Exercice favori resp.", userSettings.favoriteExercise, selectedItem == 1);
         y += lineHeight;
         
-        // 3. Vibration
         drawSettingItem(dc, y, "Vibrations", userSettings.enableVibration ? "ON" : "OFF", selectedItem == 2);
         y += lineHeight;
         
-        // 4. Max apnea time
         drawSettingItem(dc, y, "Temps max apnee", userSettings.getMaxApneaTimeFormatted(), selectedItem == 3);
         y += lineHeight;
         
-        // 5. CO2 tolerance level
         drawSettingItem(dc, y, "Tolerance CO2", userSettings.getCO2ToleranceName(), selectedItem == 4);
         y += lineHeight;
         
-        // 6. O2 efficiency level
-        drawSettingItem(dc, y, "Efficacité O2", userSettings.getO2EfficiencyName(), selectedItem == 5);
+        drawSettingItem(dc, y, "Efficacite O2", userSettings.getO2EfficiencyName(), selectedItem == 5);
         y += lineHeight;
         
-        // 7. Favorite apnea table
         drawSettingItem(dc, y, "Table apnee favori", userSettings.favoriteApneaTable, selectedItem == 6);
         
-        // Instructions
         dc.setFont(Graphics.FONT_TINY);
         dc.setColor(150, 150, 150);
         dc.drawText(width / 2, height - 30, "UP/DOWN: Selectionner", Graphics.TEXT_JUSTIFY_CENTER);
