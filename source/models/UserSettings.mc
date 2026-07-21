@@ -7,20 +7,20 @@ class UserSettings {
     var favoriteExercise;
     var enableVibration;
     var enableSound;
-    var maxApneaTime;        // User's maximum apnea time in seconds
-    var co2ToleranceLevel;   // 1-5 scale for CO2 tolerance
-    var o2EfficiencyLevel;    // 1-5 scale for O2 efficiency
-    var favoriteApneaTable;  // Favorite apnea table name
+    var maxApneaTime;
+    var co2ToleranceLevel;
+    var o2EfficiencyLevel;
+    var favoriteApneaTable;
     
     function initialize() {
         defaultDuration = 4;
         favoriteExercise = "Carre";
         enableVibration = true;
         enableSound = false;
-        maxApneaTime = 120;    // Default 2:00
+        maxApneaTime = 120;
         co2ToleranceLevel = 1;
         o2EfficiencyLevel = 1;
-        favoriteApneaTable = "CO2 Débutant";
+        favoriteApneaTable = "CO2 Debutant";
     }
     
     // Load settings from file
@@ -42,16 +42,14 @@ class UserSettings {
                 settings.o2EfficiencyLevel = Lang.parseInt(parts[6]);
                 settings.favoriteApneaTable = parts[7];
             } else if (parts.size() >= 4) {
-                // Legacy format - upgrade
                 settings.defaultDuration = Lang.parseInt(parts[0]);
                 settings.favoriteExercise = parts[1];
                 settings.enableVibration = Lang.parseBoolean(parts[2]);
                 settings.enableSound = Lang.parseBoolean(parts[3]);
-                // Set defaults for new fields
                 settings.maxApneaTime = 120;
                 settings.co2ToleranceLevel = 1;
                 settings.o2EfficiencyLevel = 1;
-                settings.favoriteApneaTable = "CO2 Débutant";
+                settings.favoriteApneaTable = "CO2 Debutant";
             }
             return settings;
         }
@@ -91,7 +89,7 @@ class UserSettings {
     }
     
     function updateMaxApneaTime(time) {
-        if (time >= 30 && time <= 600) {  // 30s to 10:00
+        if (time >= 30 && time <= 600) {
             maxApneaTime = time;
         }
     }
@@ -114,21 +112,33 @@ class UserSettings {
     
     // Get CO2 tolerance level name
     function getCO2ToleranceName() {
-        if (co2ToleranceLevel == 1) return "Débutant";
-        else if (co2ToleranceLevel == 2) return "Intermédiaire-";
-        else if (co2ToleranceLevel == 3) return "Intermédiaire";
-        else if (co2ToleranceLevel == 4) return "Intermédiaire+";
-        else if (co2ToleranceLevel == 5) return "Avancé";
+        if (co2ToleranceLevel == 1) {
+            return "Debutant";
+        } else if (co2ToleranceLevel == 2) {
+            return "Intermediaire-";
+        } else if (co2ToleranceLevel == 3) {
+            return "Intermediaire";
+        } else if (co2ToleranceLevel == 4) {
+            return "Intermediaire+";
+        } else if (co2ToleranceLevel == 5) {
+            return "Avance";
+        }
         return "Inconnu";
     }
     
     // Get O2 efficiency level name
     function getO2EfficiencyName() {
-        if (o2EfficiencyLevel == 1) return "Débutant";
-        else if (o2EfficiencyLevel == 2) return "Intermédiaire-";
-        else if (o2EfficiencyLevel == 3) return "Intermédiaire";
-        else if (o2EfficiencyLevel == 4) return "Intermédiaire+";
-        else if (o2EfficiencyLevel == 5) return "Avancé";
+        if (o2EfficiencyLevel == 1) {
+            return "Debutant";
+        } else if (o2EfficiencyLevel == 2) {
+            return "Intermediaire-";
+        } else if (o2EfficiencyLevel == 3) {
+            return "Intermediaire";
+        } else if (o2EfficiencyLevel == 4) {
+            return "Intermediaire+";
+        } else if (o2EfficiencyLevel == 5) {
+            return "Avance";
+        }
         return "Inconnu";
     }
     
