@@ -16,7 +16,6 @@ class MainMenuView extends Menu2 {
         exercises = Exercise.getAllExercises();
         apneaTables = ApneaTable.getAllApneaTables();
         
-        // Add breathing exercises to menu
         this.addItem("--- RESPIRATION ---", null);
         for (var i = 0; i < exercises.size(); i++) {
             var exercise = exercises[i];
@@ -27,7 +26,6 @@ class MainMenuView extends Menu2 {
             this.addItem(displayName, :onExerciseSelected);
         }
         
-        // Add apnea tables to menu
         this.addItem("--- TABLES APNEE ---", null);
         for (var j = 0; j < apneaTables.size(); j++) {
             var table = apneaTables[j];
@@ -38,7 +36,6 @@ class MainMenuView extends Menu2 {
             this.addItem(tableDisplayName, :onApneaTableSelected);
         }
         
-        // Add settings and other options
         this.addItem("--- REGLAAGES ---", null);
         this.addItem("Reglages", :onSettingsSelected);
         this.addItem("Historique", :onHistorySelected);
