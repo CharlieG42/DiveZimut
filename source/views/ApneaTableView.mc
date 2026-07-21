@@ -15,7 +15,6 @@ class ApneaTableView extends View {
     var maxApneaTime;
     var isRunning;
     
-    // Phase constants
     var PHASE_PREP = 0;
     var PHASE_APNEA = 1;
     var PHASE_RECOVERY = 2;
@@ -29,7 +28,7 @@ class ApneaTableView extends View {
         userSettings = UserSettings.load();
         maxApneaTime = userSettings.maxApneaTime;
         if (maxApneaTime <= 0) {
-            maxApneaTime = 120;  // Default 2:00 if not set
+            maxApneaTime = 120;
         }
         isRunning = false;
     }
@@ -51,7 +50,7 @@ class ApneaTableView extends View {
         }
         
         currentPhase = PHASE_PREP;
-        timeLeft = 5;  // 5s preparation
+        timeLeft = 5;
         startTimer();
         updateDisplay();
     }
@@ -79,7 +78,6 @@ class ApneaTableView extends View {
                 System.vibrate(150);
             }
             
-            // Move to next phase
             if (currentPhase == PHASE_PREP) {
                 startApneaPhase();
             } else if (currentPhase == PHASE_APNEA) {
@@ -140,21 +138,17 @@ class ApneaTableView extends View {
         var width = dc.getWidth();
         var height = dc.getHeight();
         
-        // Clear screen
         dc.setColor(0, 0, 0);
         dc.fillRectangle(0, 0, width, height);
         
-        // Draw table name and type
         dc.setColor(255, 255, 255);
         dc.setFont(Graphics.FONT_SMALL);
         dc.drawText(width / 2, 10, currentTable.name, Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width / 2, 25, currentTable.getDifficultyName(), Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw cycle info
         dc.setFont(Graphics.FONT_TINY);
         dc.drawText(10, 40, "Cycle: " + (currentCycle + 1) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_LEFT);
         
-        // Draw current phase
         dc.setFont(Graphics.FONT_LARGE);
         var phaseText = "";
         if (currentPhase == PHASE_PREP) {
@@ -166,11 +160,9 @@ class ApneaTableView extends View {
         }
         dc.drawText(width / 2, height / 2 - 15, phaseText, Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw time left
         dc.setFont(Graphics.FONT_XLARGE);
         dc.drawText(width / 2, height / 2 + 15, formatTime(timeLeft), Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw progress bar for current phase
         var barWidth = width - 40;
         var barHeight = 8;
         var barY = height - 40;
@@ -186,21 +178,18 @@ class ApneaTableView extends View {
         var originalDuration = phaseDuration;
         var progress = 1.0 - (timeLeft / (float)originalDuration);
         
-        // Background bar
         dc.setColor(50, 50, 50);
         dc.fillRectangle(20, barY, barWidth, barHeight);
         
-        // Progress bar - different colors for each phase
         if (currentPhase == PHASE_PREP) {
-            dc.setColor(255, 255, 0);  // Yellow for prep
+            dc.setColor(255, 255, 0);
         } else if (currentPhase == PHASE_APNEA) {
-            dc.setColor(255, 0, 0);    // Red for apnea
+            dc.setColor(255, 0, 0);
         } else {
-            dc.setColor(0, 255, 0);    // Green for recovery
+            dc.setColor(0, 255, 0);
         }
         dc.fillRectangle(20, barY, (int)(barWidth * progress), barHeight);
         
-        // Draw next phase info
         dc.setFont(Graphics.FONT_TINY);
         if (currentPhase == PHASE_PREP) {
             var nextDuration = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
@@ -212,7 +201,6 @@ class ApneaTableView extends View {
             dc.drawText(width / 2, height - 20, "Prochain cycle: " + (currentCycle + 2) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_CENTER);
         }
         
-        // Draw pause indicator if paused
         if (!isRunning) {
             dc.setColor(255, 255, 0);
             dc.setFont(Graphics.FONT_SMALL);
@@ -221,15 +209,14 @@ class ApneaTableView extends View {
     }
     
     function formatTime(seconds) {
-        if (seconds < 0) {
-            return "00:00";
-        }
-        var mins = (int)(seconds / 60);
-        var secs = seconds % 60;
-        if (mins > 0) {
-            return mins + ":" + (secs < 10 ? "0" + secs : secs);
+        if (seconds < 10) {
+            return "00:0" + seconds;
+        } else if (seconds < 60) {
+            return "00:" + seconds;
         } else {
-            return "00:" + (secs < 10 ? "0" + secs : secs);
+            var minutes = (int)(seconds / 60);
+            var secs = seconds % 60;
+            return minutes + ":" + (secs < 10 ? "0" + secs : secs);
         }
     }
     
