@@ -66,12 +66,10 @@ class ExerciseView extends View {
         if (timeLeft <= 0) {
             timer.stop();
             
-            // Vibrate if enabled
             if (userSettings.enableVibration) {
                 System.vibrate(150);
             }
             
-            // Move to next phase
             nextPhase();
         }
     }
@@ -85,7 +83,9 @@ class ExerciseView extends View {
     
     function pauseExercise() {
         isRunning = false;
-        timer.stop();
+        if (timer != null) {
+            timer.stop();
+        }
         updateDisplay();
     }
     
@@ -114,39 +114,31 @@ class ExerciseView extends View {
         var width = dc.getWidth();
         var height = dc.getHeight();
         
-        // Clear screen
         dc.setColor(0, 0, 0);
         dc.fillRectangle(0, 0, width, height);
         
-        // Draw exercise name
         dc.setColor(255, 255, 255);
         dc.setFont(Graphics.FONT_MEDIUM);
         dc.drawText(width / 2, 20, currentExercise.name, Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw current phase
         var phase = currentExercise.phases[currentPhaseIndex];
         dc.setFont(Graphics.FONT_LARGE);
         dc.drawText(width / 2, height / 2 - 20, phase, Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw time left
         dc.setFont(Graphics.FONT_XLARGE);
         dc.drawText(width / 2, height / 2 + 20, formatTime(timeLeft), Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw progress bar
         var barWidth = width - 40;
         var barHeight = 10;
         var barY = height - 50;
         var progress = 1.0 - (timeLeft / (float)getPhaseDuration(currentPhaseIndex));
         
-        // Background bar
         dc.setColor(50, 50, 50);
         dc.fillRectangle(20, barY, barWidth, barHeight);
         
-        // Progress bar
         dc.setColor(0, 200, 255);
         dc.fillRectangle(20, barY, (int)(barWidth * progress), barHeight);
         
-        // Draw pause indicator if paused
         if (!isRunning) {
             dc.setColor(255, 255, 0);
             dc.setFont(Graphics.FONT_SMALL);
