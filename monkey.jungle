@@ -1,1 +1,29 @@
-project.manifest = manifest.xml
+{
+    "iq": {
+        "namespace": "DiveZimut",
+        "name": "DiveZimut",
+        "version": "1.0.0",
+        "author": "WildZimut",
+        "description": "Exercices de respiration et tables d apnee pour Garmin Instinct 2X",
+        "targetDevices": ["instinct2x", "instinct2", "instinct2s"],
+        "permissions": ["VIBRATE", "FILE_SYSTEM"],
+        "languages": ["fr", "en"],
+        "applicationIcon": "resources/images/icon.png",
+        "modules": {
+            "DiveZimut": {
+                "source": [
+                    "source/DiveZimutApp.mc",
+                    "source/models/Exercise.mc",
+                    "source/models/UserSettings.mc",
+                    "source/models/ApneaTable.mc",
+                    "source/views/MainMenuView.mc",
+                    "source/views/ExerciseView.mc",
+                    "source/views/ApneaTableView.mc",
+                    "source/views/SettingsView.mc",
+                    "source/views/HistoryView.mc",
+                    "source/views/AboutView.mc"
+                ]
+            }
+        }
+    }
+}
