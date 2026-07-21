@@ -16,7 +16,7 @@ class SettingsView extends View {
         exercises = Exercise.getAllExercises();
         apneaTables = ApneaTable.getAllApneaTables();
         selectedItem = 0;
-        numItems = 7;  // Total number of settings items
+        numItems = 7;
     }
     
     function onStart() {
@@ -42,7 +42,7 @@ class SettingsView extends View {
         var lineHeight = 25;
         
         // 1. Default duration for breathing exercises
-        drawSettingItem(dc, y, "Durée défaut resp.", userSettings.defaultDuration + "s", selectedItem == 0);
+        drawSettingItem(dc, y, "Duree defaut resp.", userSettings.defaultDuration + "s", selectedItem == 0);
         y += lineHeight;
         
         // 2. Favorite breathing exercise
@@ -54,11 +54,11 @@ class SettingsView extends View {
         y += lineHeight;
         
         // 4. Max apnea time
-        drawSettingItem(dc, y, "Temps max apnée", userSettings.getMaxApneaTimeFormatted(), selectedItem == 3);
+        drawSettingItem(dc, y, "Temps max apnee", userSettings.getMaxApneaTimeFormatted(), selectedItem == 3);
         y += lineHeight;
         
         // 5. CO2 tolerance level
-        drawSettingItem(dc, y, "Tolérance CO2", userSettings.getCO2ToleranceName(), selectedItem == 4);
+        drawSettingItem(dc, y, "Tolerance CO2", userSettings.getCO2ToleranceName(), selectedItem == 4);
         y += lineHeight;
         
         // 6. O2 efficiency level
@@ -66,12 +66,12 @@ class SettingsView extends View {
         y += lineHeight;
         
         // 7. Favorite apnea table
-        drawSettingItem(dc, y, "Table apnée favori", userSettings.favoriteApneaTable, selectedItem == 6);
+        drawSettingItem(dc, y, "Table apnee favori", userSettings.favoriteApneaTable, selectedItem == 6);
         
         // Instructions
         dc.setFont(Graphics.FONT_TINY);
         dc.setColor(150, 150, 150);
-        dc.drawText(width / 2, height - 30, "UP/DOWN: Sélectionner", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, height - 30, "UP/DOWN: Selectionner", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width / 2, height - 20, "ENTER: Modifier", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width / 2, height - 10, "BACK: Retour", Graphics.TEXT_JUSTIFY_CENTER);
     }
@@ -113,10 +113,8 @@ class SettingsView extends View {
     
     function modifySelectedSetting() {
         if (selectedItem == 0) {
-            // Default duration
             userSettings.defaultDuration = (userSettings.defaultDuration % 20) + 1;
         } else if (selectedItem == 1) {
-            // Favorite breathing exercise
             var currentIndex = 0;
             for (var i = 0; i < exercises.size(); i++) {
                 if (exercises[i].name == userSettings.favoriteExercise) {
@@ -127,22 +125,17 @@ class SettingsView extends View {
             currentIndex = (currentIndex + 1) % exercises.size();
             userSettings.favoriteExercise = exercises[currentIndex].name;
         } else if (selectedItem == 2) {
-            // Vibration toggle
             userSettings.enableVibration = !userSettings.enableVibration;
         } else if (selectedItem == 3) {
-            // Max apnea time
             userSettings.maxApneaTime = userSettings.maxApneaTime + 30;
             if (userSettings.maxApneaTime > 600) {
                 userSettings.maxApneaTime = 30;
             }
         } else if (selectedItem == 4) {
-            // CO2 tolerance level
             userSettings.co2ToleranceLevel = (userSettings.co2ToleranceLevel % 5) + 1;
         } else if (selectedItem == 5) {
-            // O2 efficiency level
             userSettings.o2EfficiencyLevel = (userSettings.o2EfficiencyLevel % 5) + 1;
         } else if (selectedItem == 6) {
-            // Favorite apnea table
             var currentIndex = 0;
             for (var i = 0; i < apneaTables.size(); i++) {
                 if (apneaTables[i].name == userSettings.favoriteApneaTable) {

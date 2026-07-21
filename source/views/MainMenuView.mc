@@ -12,13 +12,8 @@ class MainMenuView extends Menu2 {
     function initialize() {
         Menu2.initialize();
         
-        // Load user settings
         userSettings = UserSettings.load();
-        
-        // Load all exercises
         exercises = Exercise.getAllExercises();
-        
-        // Load all apnea tables
         apneaTables = ApneaTable.getAllApneaTables();
         
         // Add breathing exercises to menu
@@ -33,7 +28,7 @@ class MainMenuView extends Menu2 {
         }
         
         // Add apnea tables to menu
-        this.addItem("--- TABLES APNÉE ---", null);
+        this.addItem("--- TABLES APNEE ---", null);
         for (var j = 0; j < apneaTables.size(); j++) {
             var table = apneaTables[j];
             var tableDisplayName = table.name;
@@ -44,15 +39,14 @@ class MainMenuView extends Menu2 {
         }
         
         // Add settings and other options
-        this.addItem("--- RÉGLAAGES ---", null);
-        this.addItem("Réglages", :onSettingsSelected);
+        this.addItem("--- REGLAAGES ---", null);
+        this.addItem("Reglages", :onSettingsSelected);
         this.addItem("Historique", :onHistorySelected);
-        this.addItem("À propos", :onAboutSelected);
+        this.addItem("A propos", :onAboutSelected);
     }
     
     function onExerciseSelected(index) {
-        // Adjust index for the separator items
-        var exerciseIndex = index - 1;  // Skip the first separator
+        var exerciseIndex = index - 1;
         if (exerciseIndex >= 0 && exerciseIndex < exercises.size()) {
             var exercise = exercises[exerciseIndex];
             var exerciseView = new ExerciseView(exercise);
@@ -61,7 +55,6 @@ class MainMenuView extends Menu2 {
     }
     
     function onApneaTableSelected(index) {
-        // Calculate table index: skip breathing exercises + 2 separators
         var tableIndex = index - exercises.size() - 2;
         if (tableIndex >= 0 && tableIndex < apneaTables.size()) {
             var table = apneaTables[tableIndex];
