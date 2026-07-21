@@ -36,9 +36,13 @@ class ExerciseView extends View {
     
     function getPhaseDuration(phaseIndex) {
         if (currentExercise.name == "4-7-8") {
-            if (phaseIndex == 0) return 4;
-            else if (phaseIndex == 1) return 7;
-            else return 8;
+            if (phaseIndex == 0) {
+                return 4;
+            } else if (phaseIndex == 1) {
+                return 7;
+            } else {
+                return 8;
+            }
         }
         return currentExercise.defaultDuration;
     }
@@ -52,7 +56,9 @@ class ExerciseView extends View {
     }
     
     function onTimerFired() {
-        if (!isRunning) return;
+        if (!isRunning) {
+            return;
+        }
         
         timeLeft--;
         updateDisplay();
@@ -91,7 +97,9 @@ class ExerciseView extends View {
     
     function stopExercise() {
         isRunning = false;
-        timer.stop();
+        if (timer != null) {
+            timer.stop();
+        }
         saveToHistory();
         var mainMenu = new MainMenuView();
         View.setView(mainMenu);
@@ -152,7 +160,7 @@ class ExerciseView extends View {
         } else if (seconds < 60) {
             return "00:" + seconds;
         } else {
-            var minutes = seconds / 60;
+            var minutes = (int)(seconds / 60);
             var secs = seconds % 60;
             return minutes + ":" + (secs < 10 ? "0" + secs : secs);
         }
