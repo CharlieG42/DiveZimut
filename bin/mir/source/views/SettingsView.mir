@@ -1,0 +1,1063 @@
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; ]
+using Toybox;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [UI,3,13,15]; ]
+using Toybox.UI;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 6; @symbol_classdef = [SettingsView,6,6,18]; @symbol_extends<0> = [View,6,27,31]; ]
+class SettingsView extends View {
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 7; @position = 8; @symbol_vardef = [userSettings,7,8,20]; ]
+    var userSettings;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 8; @position = 8; @symbol_vardef = [exercises,8,8,17]; ]
+    var exercises;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 9; @position = 8; @symbol_vardef = [apneaTables,9,8,19]; ]
+    var apneaTables;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 10; @position = 8; @symbol_vardef = [selectedItem,10,8,20]; ]
+    var selectedItem;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 11; @position = 8; @symbol_vardef = [numItems,11,8,16]; ]
+    var numItems;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; ]
+    function initialize() as Void {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_13_26_20_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 14 8 ]
+        symbol [ View %tmp.2 14 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 14 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 15 8 ]
+        symbol [ UserSettings %tmp.5 15 23 35 ];
+        %tmp.5 = getv ? :UserSettings;
+        symbol [ load %tmp.6 15 36 40 ];
+        %tmp.6 = getv function %tmp.5 :load;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        symbol [ userSettings ? 15 8 20 ];
+        putv self :userSettings %tmp.7;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 16 8 ]
+        symbol [ Exercise %tmp.9 16 20 28 ];
+        %tmp.9 = getv ? :Exercise;
+        symbol [ getAllExercises %tmp.10 16 29 44 ];
+        %tmp.10 = getv function %tmp.9 :getAllExercises;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        symbol [ exercises ? 16 8 17 ];
+        putv self :exercises %tmp.11;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 17 8 ]
+        symbol [ ApneaTable %tmp.13 17 22 32 ];
+        %tmp.13 = getv ? :ApneaTable;
+        symbol [ getAllApneaTables %tmp.14 17 33 50 ];
+        %tmp.14 = getv function %tmp.13 :getAllApneaTables;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ apneaTables ? 17 8 19 ];
+        putv self :apneaTables %tmp.15;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 18 8 ]
+        %tmp.16 = 0;
+        symbol [ selectedItem ? 18 8 20 ];
+        putv self :selectedItem %tmp.16;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 19 8 ]
+        %tmp.17 = 7;
+        symbol [ numItems ? 19 8 16 ];
+        putv self :numItems %tmp.17;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_13_26_20_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 22; @symbol_functiondef = [onStart,22,13,20]; ]
+    function onStart() {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_22_23_24_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 23 8 ]
+        %tmp.1 = self;
+        symbol [ updateDisplay %tmp.2 23 8 21 ];
+        %tmp.2 = getv function %tmp.1 :updateDisplay;
+        invoke %tmp.1 %tmp.2();
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_22_23_24_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 26; @symbol_functiondef = [updateDisplay,26,13,26]; ]
+    function updateDisplay() {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 27 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop" ]
+        %dc.1 = local;
+        symbol [ dc %dc.1 27 12 14 ];
+        symbol [ View %tmp.2 27 17 21 ];
+        %tmp.2 = getv ? :View;
+        symbol [ getDC %tmp.3 27 22 27 ];
+        %tmp.3 = getv function %tmp.2 :getDC;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %dc.1 %tmp.4;
+        symbol [ dc %dc.1 27 12 14 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 28 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop" ]
+        %width.2 = local;
+        symbol [ width %width.2 28 12 17 ];
+        %tmp.5 = lgetv %dc.1;
+        symbol [ dc %tmp.5 28 20 22 ];
+        symbol [ getWidth %tmp.6 28 23 31 ];
+        %tmp.6 = getv function %tmp.5 :getWidth;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %width.2 %tmp.7;
+        symbol [ width %width.2 28 12 17 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 29 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop" ]
+        %height.3 = local;
+        symbol [ height %height.3 29 12 18 ];
+        %tmp.8 = lgetv %dc.1;
+        symbol [ dc %tmp.8 29 21 23 ];
+        symbol [ getHeight %tmp.9 29 24 33 ];
+        %tmp.9 = getv function %tmp.8 :getHeight;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %height.3 %tmp.10;
+        symbol [ height %height.3 29 12 18 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 32 8 ]
+        %tmp.11 = lgetv %dc.1;
+        symbol [ dc %tmp.11 32 8 10 ];
+        symbol [ setColor %tmp.12 32 11 19 ];
+        %tmp.12 = getv function %tmp.11 :setColor;
+        %tmp.13 = 0;
+        %tmp.14 = 0;
+        %tmp.15 = 0;
+        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14, %tmp.15);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 33 8 ]
+        %tmp.16 = lgetv %dc.1;
+        symbol [ dc %tmp.16 33 8 10 ];
+        symbol [ fillRectangle %tmp.17 33 11 24 ];
+        %tmp.17 = getv function %tmp.16 :fillRectangle;
+        %tmp.18 = 0;
+        %tmp.19 = 0;
+        %tmp.20 = lgetv %width.2;
+        symbol [ width %tmp.20 33 31 36 ];
+        %tmp.21 = lgetv %height.3;
+        symbol [ height %tmp.21 33 38 44 ];
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20, %tmp.21);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 36 8 ]
+        %tmp.22 = lgetv %dc.1;
+        symbol [ dc %tmp.22 36 8 10 ];
+        symbol [ setColor %tmp.23 36 11 19 ];
+        %tmp.23 = getv function %tmp.22 :setColor;
+        %tmp.24 = 255;
+        %tmp.25 = 255;
+        %tmp.26 = 255;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.26);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 37 8 ]
+        %tmp.27 = lgetv %dc.1;
+        symbol [ dc %tmp.27 37 8 10 ];
+        symbol [ setFont %tmp.28 37 11 18 ];
+        %tmp.28 = getv function %tmp.27 :setFont;
+        symbol [ Graphics %tmp.29 37 19 27 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.30 37 28 39 ];
+        %tmp.30 = getv %tmp.29 :FONT_MEDIUM;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 38 8 ]
+        %tmp.31 = lgetv %dc.1;
+        symbol [ dc %tmp.31 38 8 10 ];
+        symbol [ drawText %tmp.32 38 11 19 ];
+        %tmp.32 = getv function %tmp.31 :drawText;
+        %tmp.33 = lgetv %width.2;
+        symbol [ width %tmp.33 38 20 25 ];
+        %tmp.34 = 2;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        %tmp.36 = 10;
+        %tmp.37 = "REGLAAGES";
+        symbol [ Graphics %tmp.38 38 48 56 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.39 38 57 76 ];
+        %tmp.39 = getv %tmp.38 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.31 %tmp.32(%tmp.35, %tmp.36, %tmp.37, %tmp.39);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 41 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop" ]
+        %y.4 = local;
+        symbol [ y %y.4 41 12 13 ];
+        %tmp.40 = 35;
+        lputv %y.4 %tmp.40;
+        symbol [ y %y.4 41 12 13 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 42 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop" ]
+        %lineHeight.5 = local;
+        symbol [ lineHeight %lineHeight.5 42 12 22 ];
+        %tmp.41 = 25;
+        lputv %lineHeight.5 %tmp.41;
+        symbol [ lineHeight %lineHeight.5 42 12 22 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 45 8 ]
+        %tmp.42 = self;
+        symbol [ drawSettingItem %tmp.43 45 8 23 ];
+        %tmp.43 = getv function %tmp.42 :drawSettingItem;
+        %tmp.44 = lgetv %dc.1;
+        symbol [ dc %tmp.44 45 24 26 ];
+        %tmp.45 = lgetv %y.4;
+        symbol [ y %tmp.45 45 28 29 ];
+        %tmp.46 = "Durée défaut resp.";
+        symbol [ userSettings %tmp.48 45 53 65 ];
+        %tmp.48 = getv ? :userSettings;
+        symbol [ defaultDuration %tmp.49 45 66 81 ];
+        %tmp.49 = getv %tmp.48 :defaultDuration;
+        %tmp.50 = "s";
+        %tmp.51 = add %tmp.49 %tmp.50;
+        symbol [ selectedItem %tmp.53 45 89 101 ];
+        %tmp.53 = getv ? :selectedItem;
+        %tmp.54 = 0;
+        %tmp.55 = eq %tmp.53 %tmp.54;
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.46, %tmp.51, %tmp.55);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 46 8 ]
+        %tmp.56 = lgetv %y.4;
+        symbol [ y %tmp.56 46 8 9 ];
+        %tmp.57 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.57 46 13 23 ];
+        %tmp.58 = add %tmp.56 %tmp.57;
+        lputv %y.4 %tmp.58;
+        symbol [ y %y.4 46 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 49 8 ]
+        %tmp.59 = self;
+        symbol [ drawSettingItem %tmp.60 49 8 23 ];
+        %tmp.60 = getv function %tmp.59 :drawSettingItem;
+        %tmp.61 = lgetv %dc.1;
+        symbol [ dc %tmp.61 49 24 26 ];
+        %tmp.62 = lgetv %y.4;
+        symbol [ y %tmp.62 49 28 29 ];
+        %tmp.63 = "Exercice favori resp.";
+        symbol [ userSettings %tmp.65 49 56 68 ];
+        %tmp.65 = getv ? :userSettings;
+        symbol [ favoriteExercise %tmp.66 49 69 85 ];
+        %tmp.66 = getv %tmp.65 :favoriteExercise;
+        symbol [ selectedItem %tmp.68 49 87 99 ];
+        %tmp.68 = getv ? :selectedItem;
+        %tmp.69 = 1;
+        %tmp.70 = eq %tmp.68 %tmp.69;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.62, %tmp.63, %tmp.66, %tmp.70);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 50 8 ]
+        %tmp.71 = lgetv %y.4;
+        symbol [ y %tmp.71 50 8 9 ];
+        %tmp.72 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.72 50 13 23 ];
+        %tmp.73 = add %tmp.71 %tmp.72;
+        lputv %y.4 %tmp.73;
+        symbol [ y %y.4 50 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 53 8 ]
+        %tmp.74 = self;
+        symbol [ drawSettingItem %tmp.75 53 8 23 ];
+        %tmp.75 = getv function %tmp.74 :drawSettingItem;
+        %tmp.76 = lgetv %dc.1;
+        symbol [ dc %tmp.76 53 24 26 ];
+        %tmp.77 = lgetv %y.4;
+        symbol [ y %tmp.77 53 28 29 ];
+        %tmp.78 = "Vibrations";
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_begin:
+        symbol [ userSettings %tmp.80 53 45 57 ];
+        %tmp.80 = getv ? :userSettings;
+        symbol [ enableVibration %tmp.81 53 58 73 ];
+        %tmp.81 = getv %tmp.80 :enableVibration;
+        bf %tmp.81 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_else_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_true:
+        %tmp.82 = "ON";
+        push %tmp.82;
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_else_false:
+        %tmp.83 = "OFF";
+        push %tmp.83;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_end:
+        %tmp.84 = phi [%tmp.81 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_begin] [%tmp.82 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_true] [%tmp.83 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_else_false] [%tmp.84 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_53_45_53_83_end];
+        symbol [ selectedItem %tmp.86 53 90 102 ];
+        %tmp.86 = getv ? :selectedItem;
+        %tmp.87 = 2;
+        %tmp.88 = eq %tmp.86 %tmp.87;
+        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.77, %tmp.78, %tmp.84, %tmp.88);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 54 8 ]
+        %tmp.89 = lgetv %y.4;
+        symbol [ y %tmp.89 54 8 9 ];
+        %tmp.90 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.90 54 13 23 ];
+        %tmp.91 = add %tmp.89 %tmp.90;
+        lputv %y.4 %tmp.91;
+        symbol [ y %y.4 54 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 57 8 ]
+        %tmp.92 = self;
+        symbol [ drawSettingItem %tmp.93 57 8 23 ];
+        %tmp.93 = getv function %tmp.92 :drawSettingItem;
+        %tmp.94 = lgetv %dc.1;
+        symbol [ dc %tmp.94 57 24 26 ];
+        %tmp.95 = lgetv %y.4;
+        symbol [ y %tmp.95 57 28 29 ];
+        %tmp.96 = "Temps max apnée";
+        symbol [ userSettings %tmp.98 57 50 62 ];
+        %tmp.98 = getv ? :userSettings;
+        symbol [ getMaxApneaTimeFormatted %tmp.99 57 63 87 ];
+        %tmp.99 = getv function %tmp.98 :getMaxApneaTimeFormatted;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        symbol [ selectedItem %tmp.102 57 91 103 ];
+        %tmp.102 = getv ? :selectedItem;
+        %tmp.103 = 3;
+        %tmp.104 = eq %tmp.102 %tmp.103;
+        invoke %tmp.92 %tmp.93(%tmp.94, %tmp.95, %tmp.96, %tmp.100, %tmp.104);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 58 8 ]
+        %tmp.105 = lgetv %y.4;
+        symbol [ y %tmp.105 58 8 9 ];
+        %tmp.106 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.106 58 13 23 ];
+        %tmp.107 = add %tmp.105 %tmp.106;
+        lputv %y.4 %tmp.107;
+        symbol [ y %y.4 58 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 61 8 ]
+        %tmp.108 = self;
+        symbol [ drawSettingItem %tmp.109 61 8 23 ];
+        %tmp.109 = getv function %tmp.108 :drawSettingItem;
+        %tmp.110 = lgetv %dc.1;
+        symbol [ dc %tmp.110 61 24 26 ];
+        %tmp.111 = lgetv %y.4;
+        symbol [ y %tmp.111 61 28 29 ];
+        %tmp.112 = "Tolérance CO2";
+        symbol [ userSettings %tmp.114 61 48 60 ];
+        %tmp.114 = getv ? :userSettings;
+        symbol [ getCO2ToleranceName %tmp.115 61 61 80 ];
+        %tmp.115 = getv function %tmp.114 :getCO2ToleranceName;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        symbol [ selectedItem %tmp.118 61 84 96 ];
+        %tmp.118 = getv ? :selectedItem;
+        %tmp.119 = 4;
+        %tmp.120 = eq %tmp.118 %tmp.119;
+        invoke %tmp.108 %tmp.109(%tmp.110, %tmp.111, %tmp.112, %tmp.116, %tmp.120);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 62 8 ]
+        %tmp.121 = lgetv %y.4;
+        symbol [ y %tmp.121 62 8 9 ];
+        %tmp.122 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.122 62 13 23 ];
+        %tmp.123 = add %tmp.121 %tmp.122;
+        lputv %y.4 %tmp.123;
+        symbol [ y %y.4 62 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 65 8 ]
+        %tmp.124 = self;
+        symbol [ drawSettingItem %tmp.125 65 8 23 ];
+        %tmp.125 = getv function %tmp.124 :drawSettingItem;
+        %tmp.126 = lgetv %dc.1;
+        symbol [ dc %tmp.126 65 24 26 ];
+        %tmp.127 = lgetv %y.4;
+        symbol [ y %tmp.127 65 28 29 ];
+        %tmp.128 = "Efficacité O2";
+        symbol [ userSettings %tmp.130 65 48 60 ];
+        %tmp.130 = getv ? :userSettings;
+        symbol [ getO2EfficiencyName %tmp.131 65 61 80 ];
+        %tmp.131 = getv function %tmp.130 :getO2EfficiencyName;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        symbol [ selectedItem %tmp.134 65 84 96 ];
+        %tmp.134 = getv ? :selectedItem;
+        %tmp.135 = 5;
+        %tmp.136 = eq %tmp.134 %tmp.135;
+        invoke %tmp.124 %tmp.125(%tmp.126, %tmp.127, %tmp.128, %tmp.132, %tmp.136);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 66 8 ]
+        %tmp.137 = lgetv %y.4;
+        symbol [ y %tmp.137 66 8 9 ];
+        %tmp.138 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.138 66 13 23 ];
+        %tmp.139 = add %tmp.137 %tmp.138;
+        lputv %y.4 %tmp.139;
+        symbol [ y %y.4 66 8 9 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 69 8 ]
+        %tmp.140 = self;
+        symbol [ drawSettingItem %tmp.141 69 8 23 ];
+        %tmp.141 = getv function %tmp.140 :drawSettingItem;
+        %tmp.142 = lgetv %dc.1;
+        symbol [ dc %tmp.142 69 24 26 ];
+        %tmp.143 = lgetv %y.4;
+        symbol [ y %tmp.143 69 28 29 ];
+        %tmp.144 = "Table apnée favori";
+        symbol [ userSettings %tmp.146 69 53 65 ];
+        %tmp.146 = getv ? :userSettings;
+        symbol [ favoriteApneaTable %tmp.147 69 66 84 ];
+        %tmp.147 = getv %tmp.146 :favoriteApneaTable;
+        symbol [ selectedItem %tmp.149 69 86 98 ];
+        %tmp.149 = getv ? :selectedItem;
+        %tmp.150 = 6;
+        %tmp.151 = eq %tmp.149 %tmp.150;
+        invoke %tmp.140 %tmp.141(%tmp.142, %tmp.143, %tmp.144, %tmp.147, %tmp.151);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 72 8 ]
+        %tmp.152 = lgetv %dc.1;
+        symbol [ dc %tmp.152 72 8 10 ];
+        symbol [ setFont %tmp.153 72 11 18 ];
+        %tmp.153 = getv function %tmp.152 :setFont;
+        symbol [ Graphics %tmp.154 72 19 27 ];
+        %tmp.154 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.155 72 28 37 ];
+        %tmp.155 = getv %tmp.154 :FONT_TINY;
+        invoke %tmp.152 %tmp.153(%tmp.155);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 73 8 ]
+        %tmp.156 = lgetv %dc.1;
+        symbol [ dc %tmp.156 73 8 10 ];
+        symbol [ setColor %tmp.157 73 11 19 ];
+        %tmp.157 = getv function %tmp.156 :setColor;
+        %tmp.158 = 150;
+        %tmp.159 = 150;
+        %tmp.160 = 150;
+        invoke %tmp.156 %tmp.157(%tmp.158, %tmp.159, %tmp.160);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 74 8 ]
+        %tmp.161 = lgetv %dc.1;
+        symbol [ dc %tmp.161 74 8 10 ];
+        symbol [ drawText %tmp.162 74 11 19 ];
+        %tmp.162 = getv function %tmp.161 :drawText;
+        %tmp.163 = lgetv %width.2;
+        symbol [ width %tmp.163 74 20 25 ];
+        %tmp.164 = 2;
+        %tmp.165 = div %tmp.163 %tmp.164;
+        %tmp.166 = lgetv %height.3;
+        symbol [ height %tmp.166 74 31 37 ];
+        %tmp.167 = 30;
+        %tmp.168 = sub %tmp.166 %tmp.167;
+        %tmp.169 = "UP/DOWN: Sélectionner";
+        symbol [ Graphics %tmp.170 74 69 77 ];
+        %tmp.170 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.171 74 78 97 ];
+        %tmp.171 = getv %tmp.170 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.161 %tmp.162(%tmp.165, %tmp.168, %tmp.169, %tmp.171);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 75 8 ]
+        %tmp.172 = lgetv %dc.1;
+        symbol [ dc %tmp.172 75 8 10 ];
+        symbol [ drawText %tmp.173 75 11 19 ];
+        %tmp.173 = getv function %tmp.172 :drawText;
+        %tmp.174 = lgetv %width.2;
+        symbol [ width %tmp.174 75 20 25 ];
+        %tmp.175 = 2;
+        %tmp.176 = div %tmp.174 %tmp.175;
+        %tmp.177 = lgetv %height.3;
+        symbol [ height %tmp.177 75 31 37 ];
+        %tmp.178 = 20;
+        %tmp.179 = sub %tmp.177 %tmp.178;
+        %tmp.180 = "ENTER: Modifier";
+        symbol [ Graphics %tmp.181 75 63 71 ];
+        %tmp.181 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.182 75 72 91 ];
+        %tmp.182 = getv %tmp.181 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.172 %tmp.173(%tmp.176, %tmp.179, %tmp.180, %tmp.182);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 76 8 ]
+        %tmp.183 = lgetv %dc.1;
+        symbol [ dc %tmp.183 76 8 10 ];
+        symbol [ drawText %tmp.184 76 11 19 ];
+        %tmp.184 = getv function %tmp.183 :drawText;
+        %tmp.185 = lgetv %width.2;
+        symbol [ width %tmp.185 76 20 25 ];
+        %tmp.186 = 2;
+        %tmp.187 = div %tmp.185 %tmp.186;
+        %tmp.188 = lgetv %height.3;
+        symbol [ height %tmp.188 76 31 37 ];
+        %tmp.189 = 10;
+        %tmp.190 = sub %tmp.188 %tmp.189;
+        %tmp.191 = "BACK: Retour";
+        symbol [ Graphics %tmp.192 76 60 68 ];
+        %tmp.192 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.193 76 69 88 ];
+        %tmp.193 = getv %tmp.192 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.183 %tmp.184(%tmp.187, %tmp.190, %tmp.191, %tmp.193);
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_26_29_77_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 79; @symbol_functiondef = [drawSettingItem,79,13,28]; @symbol_param<0> = [dc,79,29,31]; @symbol_param<1> = [y,79,33,34]; @symbol_param<2> = [label,79,36,41]; @symbol_param<3> = [value,79,43,48]; @symbol_param<4> = [isSelected,79,50,60]; ]
+    function drawSettingItem(dc, y, label, value, isSelected) {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_79_62_91_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 80 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_79_62_91_4_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_79_62_91_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 80 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 80 20 22 ];
+        symbol [ getWidth %tmp.2 80 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 80 12 17 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 82 8 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_8_85_8_if_stmt:
+        %tmp.4 = lgetv %isSelected;
+        symbol [ isSelected %tmp.4 82 12 22 ];
+        bf %tmp.4 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_8_85_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_8_85_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_24_85_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 83 12 ]
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 83 12 14 ];
+        symbol [ setColor %tmp.6 83 15 23 ];
+        %tmp.6 = getv function %tmp.5 :setColor;
+        %tmp.7 = 100;
+        %tmp.8 = 100;
+        %tmp.9 = 255;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.9);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 84 12 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 84 12 14 ];
+        symbol [ fillRectangle %tmp.11 84 15 28 ];
+        %tmp.11 = getv function %tmp.10 :fillRectangle;
+        %tmp.12 = 0;
+        %tmp.13 = lgetv %y;
+        symbol [ y %tmp.13 84 32 33 ];
+        %tmp.14 = 2;
+        %tmp.15 = sub %tmp.13 %tmp.14;
+        %tmp.16 = lgetv %width.1;
+        symbol [ width %tmp.16 84 39 44 ];
+        %tmp.17 = 22;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.15, %tmp.16, %tmp.17);
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_24_85_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_8_85_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_82_8_85_8_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 87 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 87 8 10 ];
+        symbol [ setColor %tmp.19 87 11 19 ];
+        %tmp.19 = getv function %tmp.18 :setColor;
+        %tmp.20 = 255;
+        %tmp.21 = 255;
+        %tmp.22 = 255;
+        invoke %tmp.18 %tmp.19(%tmp.20, %tmp.21, %tmp.22);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 88 8 ]
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 88 8 10 ];
+        symbol [ setFont %tmp.24 88 11 18 ];
+        %tmp.24 = getv function %tmp.23 :setFont;
+        symbol [ Graphics %tmp.25 88 19 27 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.26 88 28 38 ];
+        %tmp.26 = getv %tmp.25 :FONT_SMALL;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 89 8 ]
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 89 8 10 ];
+        symbol [ drawText %tmp.28 89 11 19 ];
+        %tmp.28 = getv function %tmp.27 :drawText;
+        %tmp.29 = 10;
+        %tmp.30 = lgetv %y;
+        symbol [ y %tmp.30 89 24 25 ];
+        %tmp.31 = lgetv %label;
+        symbol [ label %tmp.31 89 27 32 ];
+        symbol [ Graphics %tmp.32 89 34 42 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.33 89 43 60 ];
+        %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30, %tmp.31, %tmp.33);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 90 8 ]
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 90 8 10 ];
+        symbol [ drawText %tmp.35 90 11 19 ];
+        %tmp.35 = getv function %tmp.34 :drawText;
+        %tmp.36 = lgetv %width.1;
+        symbol [ width %tmp.36 90 20 25 ];
+        %tmp.37 = 10;
+        %tmp.38 = sub %tmp.36 %tmp.37;
+        %tmp.39 = lgetv %y;
+        symbol [ y %tmp.39 90 32 33 ];
+        %tmp.40 = lgetv %value;
+        symbol [ value %tmp.40 90 35 40 ];
+        symbol [ Graphics %tmp.41 90 42 50 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.42 90 51 69 ];
+        %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.34 %tmp.35(%tmp.38, %tmp.39, %tmp.40, %tmp.42);
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_79_62_91_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 93; @symbol_functiondef = [onKeyPress,93,13,23]; @symbol_param<0> = [key,93,24,27]; ]
+    function onKeyPress(key) {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_93_29_112_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 94 8 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_stmt:
+        %tmp.1 = lgetv %key;
+        symbol [ key %tmp.1 94 12 15 ];
+        symbol [ Key %tmp.3 94 19 22 ];
+        %tmp.3 = getv ? :Key;
+        symbol [ BACK %tmp.4 94 23 27 ];
+        %tmp.4 = getv %tmp.3 :BACK;
+        %tmp.5 = eq %tmp.1 %tmp.4;
+        bf %tmp.5 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_29_99_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 95 12 ]
+        symbol [ UserSettings %tmp.7 95 12 24 ];
+        %tmp.7 = getv ? :UserSettings;
+        symbol [ save %tmp.8 95 25 29 ];
+        %tmp.8 = getv function %tmp.7 :save;
+        symbol [ userSettings %tmp.10 95 30 42 ];
+        %tmp.10 = getv ? :userSettings;
+        invoke %tmp.7 %tmp.8(%tmp.10);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 96 12 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_29_99_8_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_29_99_8_stop" ]
+        %mainMenu.1 = local;
+        symbol [ mainMenu %mainMenu.1 96 16 24 ];
+        symbol [ MainMenuView %tmp.14 96 31 43 ];
+        %tmp.14 = getv ? :MainMenuView;
+        %tmp.11 = newc %tmp.14 ();
+        lputv %mainMenu.1 %tmp.11;
+        symbol [ mainMenu %mainMenu.1 96 16 24 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 97 12 ]
+        symbol [ View %tmp.16 97 12 16 ];
+        %tmp.16 = getv ? :View;
+        symbol [ setView %tmp.17 97 17 24 ];
+        %tmp.17 = getv function %tmp.16 :setView;
+        %tmp.18 = lgetv %mainMenu.1;
+        symbol [ mainMenu %tmp.18 97 25 33 ];
+        invoke %tmp.16 %tmp.17(%tmp.18);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 98 12 ]
+        %tmp.19 = true;
+        ret %tmp.19;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_29_99_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 99 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_stmt:
+        %tmp.20 = lgetv %key;
+        symbol [ key %tmp.20 99 19 22 ];
+        symbol [ Key %tmp.22 99 26 29 ];
+        %tmp.22 = getv ? :Key;
+        symbol [ UP %tmp.23 99 30 32 ];
+        %tmp.23 = getv %tmp.22 :UP;
+        %tmp.24 = eq %tmp.20 %tmp.23;
+        bf %tmp.24 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_34_103_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 100 12 ]
+        symbol [ selectedItem %tmp.26 100 28 40 ];
+        %tmp.26 = getv ? :selectedItem;
+        %tmp.27 = 1;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        symbol [ numItems %tmp.30 100 47 55 ];
+        %tmp.30 = getv ? :numItems;
+        %tmp.31 = add %tmp.28 %tmp.30;
+        symbol [ numItems %tmp.33 100 59 67 ];
+        %tmp.33 = getv ? :numItems;
+        %tmp.34 = mod %tmp.31 %tmp.33;
+        symbol [ selectedItem ? 100 12 24 ];
+        putv self :selectedItem %tmp.34;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 101 12 ]
+        %tmp.35 = self;
+        symbol [ updateDisplay %tmp.36 101 12 25 ];
+        %tmp.36 = getv function %tmp.35 :updateDisplay;
+        invoke %tmp.35 %tmp.36();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 102 12 ]
+        %tmp.37 = true;
+        ret %tmp.37;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_34_103_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 103 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_stmt:
+        %tmp.38 = lgetv %key;
+        symbol [ key %tmp.38 103 19 22 ];
+        symbol [ Key %tmp.40 103 26 29 ];
+        %tmp.40 = getv ? :Key;
+        symbol [ DOWN %tmp.41 103 30 34 ];
+        %tmp.41 = getv %tmp.40 :DOWN;
+        %tmp.42 = eq %tmp.38 %tmp.41;
+        bf %tmp.42 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_36_107_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 104 12 ]
+        symbol [ selectedItem %tmp.44 104 28 40 ];
+        %tmp.44 = getv ? :selectedItem;
+        %tmp.45 = 1;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        symbol [ numItems %tmp.48 104 48 56 ];
+        %tmp.48 = getv ? :numItems;
+        %tmp.49 = mod %tmp.46 %tmp.48;
+        symbol [ selectedItem ? 104 12 24 ];
+        putv self :selectedItem %tmp.49;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 105 12 ]
+        %tmp.50 = self;
+        symbol [ updateDisplay %tmp.51 105 12 25 ];
+        %tmp.51 = getv function %tmp.50 :updateDisplay;
+        invoke %tmp.50 %tmp.51();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 106 12 ]
+        %tmp.52 = true;
+        ret %tmp.52;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_36_107_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 107 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_15_110_8_if_stmt:
+        %tmp.53 = lgetv %key;
+        symbol [ key %tmp.53 107 19 22 ];
+        symbol [ Key %tmp.55 107 26 29 ];
+        %tmp.55 = getv ? :Key;
+        symbol [ ENTER %tmp.56 107 30 35 ];
+        %tmp.56 = getv %tmp.55 :ENTER;
+        %tmp.57 = eq %tmp.53 %tmp.56;
+        bf %tmp.57 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_15_110_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_15_110_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_37_110_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 108 12 ]
+        %tmp.58 = self;
+        symbol [ modifySelectedSetting %tmp.59 108 12 33 ];
+        %tmp.59 = getv function %tmp.58 :modifySelectedSetting;
+        invoke %tmp.58 %tmp.59();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 109 12 ]
+        %tmp.60 = true;
+        ret %tmp.60;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_37_110_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_15_110_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_107_15_110_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_103_15_110_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_99_15_110_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_94_8_110_8_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 111 8 ]
+        %tmp.61 = false;
+        ret %tmp.61;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_93_29_112_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 114; @symbol_functiondef = [modifySelectedSetting,114,13,34]; ]
+    function modifySelectedSetting() {
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_114_37_157_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 115 8 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_stmt:
+        symbol [ selectedItem %tmp.2 115 12 24 ];
+        %tmp.2 = getv ? :selectedItem;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_31_118_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 117 12 ]
+        symbol [ userSettings %tmp.5 117 12 24 ];
+        %tmp.5 = getv self :userSettings;
+        symbol [ userSettings %tmp.7 117 44 56 ];
+        %tmp.7 = getv ? :userSettings;
+        symbol [ defaultDuration %tmp.8 117 57 72 ];
+        %tmp.8 = getv %tmp.7 :defaultDuration;
+        %tmp.9 = 20;
+        %tmp.10 = mod %tmp.8 %tmp.9;
+        %tmp.11 = 1;
+        %tmp.12 = add %tmp.10 %tmp.11;
+        symbol [ defaultDuration ? 117 25 40 ];
+        putv %tmp.5 :defaultDuration %tmp.12;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_31_118_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 118 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.14 118 19 31 ];
+        %tmp.14 = getv ? :selectedItem;
+        %tmp.15 = 1;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_38_129_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 120 12 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_38_129_8_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_38_129_8_stop" ]
+        %currentIndex.1 = local;
+        symbol [ currentIndex %currentIndex.1 120 16 28 ];
+        %tmp.17 = 0;
+        lputv %currentIndex.1 %tmp.17;
+        symbol [ currentIndex %currentIndex.1 120 16 28 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 121 12 ]
+        for @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_test @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_incr @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_init:
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_begin" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 121 21 22 ];
+        %tmp.18 = 0;
+        lputv %i.2 %tmp.18;
+        symbol [ i %i.2 121 21 22 ];
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_test:
+        %tmp.19 = lgetv %i.2;
+        symbol [ i %tmp.19 121 28 29 ];
+        symbol [ exercises %tmp.21 121 32 41 ];
+        %tmp.21 = getv ? :exercises;
+        symbol [ size %tmp.22 121 42 46 ];
+        %tmp.22 = getv function %tmp.21 :size;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = lt %tmp.19 %tmp.23;
+        bf %tmp.24 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_begin:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_55_126_12_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 122 16 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_16_125_16_if_stmt:
+        symbol [ exercises %tmp.26 122 20 29 ];
+        %tmp.26 = getv ? :exercises;
+        %tmp.27 = lgetv %i.2;
+        symbol [ i %tmp.27 122 30 31 ];
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        symbol [ name %tmp.29 122 33 37 ];
+        %tmp.29 = getv %tmp.28 :name;
+        symbol [ userSettings %tmp.31 122 41 53 ];
+        %tmp.31 = getv ? :userSettings;
+        symbol [ favoriteExercise %tmp.32 122 54 70 ];
+        %tmp.32 = getv %tmp.31 :favoriteExercise;
+        %tmp.33 = eq %tmp.29 %tmp.32;
+        bf %tmp.33 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_16_125_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_16_125_16_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_72_125_16_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 123 20 ]
+        %tmp.34 = lgetv %i.2;
+        symbol [ i %tmp.34 123 35 36 ];
+        lputv %currentIndex.1 %tmp.34;
+        symbol [ currentIndex %currentIndex.1 123 20 32 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 124 20 ]
+        goto break @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_72_125_16_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_16_125_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_122_16_125_16_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_55_126_12_stop:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_incr:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 121 ]
+        %tmp.37 = lgetv %i.2;
+        symbol [ i %tmp.37 121 50 51 ];
+        %tmp.38 = add %tmp.37 1;
+        lputv %i.2 %tmp.38;
+        symbol [ i %i.2 121 50 51 ];
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_test;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_121_12_126_12_for_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 127 12 ]
+        %tmp.39 = lgetv %currentIndex.1;
+        symbol [ currentIndex %tmp.39 127 28 40 ];
+        %tmp.40 = 1;
+        %tmp.41 = add %tmp.39 %tmp.40;
+        symbol [ exercises %tmp.43 127 48 57 ];
+        %tmp.43 = getv ? :exercises;
+        symbol [ size %tmp.44 127 58 62 ];
+        %tmp.44 = getv function %tmp.43 :size;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        %tmp.46 = mod %tmp.41 %tmp.45;
+        lputv %currentIndex.1 %tmp.46;
+        symbol [ currentIndex %currentIndex.1 127 12 24 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 128 12 ]
+        symbol [ userSettings %tmp.47 128 12 24 ];
+        %tmp.47 = getv self :userSettings;
+        symbol [ exercises %tmp.49 128 44 53 ];
+        %tmp.49 = getv ? :exercises;
+        %tmp.50 = lgetv %currentIndex.1;
+        symbol [ currentIndex %tmp.50 128 54 66 ];
+        %tmp.51 = agetv %tmp.49 %tmp.50;
+        symbol [ name %tmp.52 128 68 72 ];
+        %tmp.52 = getv %tmp.51 :name;
+        symbol [ favoriteExercise ? 128 25 41 ];
+        putv %tmp.47 :favoriteExercise %tmp.52;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_38_129_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 129 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.54 129 19 31 ];
+        %tmp.54 = getv ? :selectedItem;
+        %tmp.55 = 2;
+        %tmp.56 = eq %tmp.54 %tmp.55;
+        bf %tmp.56 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_38_132_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 131 12 ]
+        symbol [ userSettings %tmp.57 131 12 24 ];
+        %tmp.57 = getv self :userSettings;
+        symbol [ userSettings %tmp.59 131 44 56 ];
+        %tmp.59 = getv ? :userSettings;
+        symbol [ enableVibration %tmp.60 131 57 72 ];
+        %tmp.60 = getv %tmp.59 :enableVibration;
+        %tmp.61 = not %tmp.60;
+        symbol [ enableVibration ? 131 25 40 ];
+        putv %tmp.57 :enableVibration %tmp.61;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_38_132_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 132 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.63 132 19 31 ];
+        %tmp.63 = getv ? :selectedItem;
+        %tmp.64 = 3;
+        %tmp.65 = eq %tmp.63 %tmp.64;
+        bf %tmp.65 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_38_138_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 134 12 ]
+        symbol [ userSettings %tmp.66 134 12 24 ];
+        %tmp.66 = getv self :userSettings;
+        symbol [ userSettings %tmp.68 134 40 52 ];
+        %tmp.68 = getv ? :userSettings;
+        symbol [ maxApneaTime %tmp.69 134 53 65 ];
+        %tmp.69 = getv %tmp.68 :maxApneaTime;
+        %tmp.70 = 30;
+        %tmp.71 = add %tmp.69 %tmp.70;
+        symbol [ maxApneaTime ? 134 25 37 ];
+        putv %tmp.66 :maxApneaTime %tmp.71;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 135 12 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_12_137_12_if_stmt:
+        symbol [ userSettings %tmp.73 135 16 28 ];
+        %tmp.73 = getv ? :userSettings;
+        symbol [ maxApneaTime %tmp.74 135 29 41 ];
+        %tmp.74 = getv %tmp.73 :maxApneaTime;
+        %tmp.75 = 600;
+        %tmp.76 = gt %tmp.74 %tmp.75;
+        bf %tmp.76 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_12_137_12_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_12_137_12_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_49_137_12_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 136 16 ]
+        symbol [ userSettings %tmp.77 136 16 28 ];
+        %tmp.77 = getv self :userSettings;
+        %tmp.78 = 30;
+        symbol [ maxApneaTime ? 136 29 41 ];
+        putv %tmp.77 :maxApneaTime %tmp.78;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_49_137_12_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_12_137_12_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_135_12_137_12_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_38_138_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 138 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.80 138 19 31 ];
+        %tmp.80 = getv ? :selectedItem;
+        %tmp.81 = 4;
+        %tmp.82 = eq %tmp.80 %tmp.81;
+        bf %tmp.82 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_38_141_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 140 12 ]
+        symbol [ userSettings %tmp.83 140 12 24 ];
+        %tmp.83 = getv self :userSettings;
+        symbol [ userSettings %tmp.85 140 46 58 ];
+        %tmp.85 = getv ? :userSettings;
+        symbol [ co2ToleranceLevel %tmp.86 140 59 76 ];
+        %tmp.86 = getv %tmp.85 :co2ToleranceLevel;
+        %tmp.87 = 5;
+        %tmp.88 = mod %tmp.86 %tmp.87;
+        %tmp.89 = 1;
+        %tmp.90 = add %tmp.88 %tmp.89;
+        symbol [ co2ToleranceLevel ? 140 25 42 ];
+        putv %tmp.83 :co2ToleranceLevel %tmp.90;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_38_141_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 141 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.92 141 19 31 ];
+        %tmp.92 = getv ? :selectedItem;
+        %tmp.93 = 5;
+        %tmp.94 = eq %tmp.92 %tmp.93;
+        bf %tmp.94 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_38_144_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 143 12 ]
+        symbol [ userSettings %tmp.95 143 12 24 ];
+        %tmp.95 = getv self :userSettings;
+        symbol [ userSettings %tmp.97 143 46 58 ];
+        %tmp.97 = getv ? :userSettings;
+        symbol [ o2EfficiencyLevel %tmp.98 143 59 76 ];
+        %tmp.98 = getv %tmp.97 :o2EfficiencyLevel;
+        %tmp.99 = 5;
+        %tmp.100 = mod %tmp.98 %tmp.99;
+        %tmp.101 = 1;
+        %tmp.102 = add %tmp.100 %tmp.101;
+        symbol [ o2EfficiencyLevel ? 143 25 42 ];
+        putv %tmp.95 :o2EfficiencyLevel %tmp.102;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_38_144_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 144 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_15_155_8_if_stmt:
+        symbol [ selectedItem %tmp.104 144 19 31 ];
+        %tmp.104 = getv ? :selectedItem;
+        %tmp.105 = 6;
+        %tmp.106 = eq %tmp.104 %tmp.105;
+        bf %tmp.106 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_15_155_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_38_155_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 146 12 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_38_155_8_start" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_38_155_8_stop" ]
+        %currentIndex.3 = local;
+        symbol [ currentIndex %currentIndex.3 146 16 28 ];
+        %tmp.107 = 0;
+        lputv %currentIndex.3 %tmp.107;
+        symbol [ currentIndex %currentIndex.3 146 16 28 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 147 12 ]
+        for @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_test @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_incr @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_init:
+        [ "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_begin" "C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 147 21 22 ];
+        %tmp.108 = 0;
+        lputv %i.4 %tmp.108;
+        symbol [ i %i.4 147 21 22 ];
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_test:
+        %tmp.109 = lgetv %i.4;
+        symbol [ i %tmp.109 147 28 29 ];
+        symbol [ apneaTables %tmp.111 147 32 43 ];
+        %tmp.111 = getv ? :apneaTables;
+        symbol [ size %tmp.112 147 44 48 ];
+        %tmp.112 = getv function %tmp.111 :size;
+        %tmp.113 = invoke %tmp.111 %tmp.112();
+        %tmp.114 = lt %tmp.109 %tmp.113;
+        bf %tmp.114 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_begin:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_57_152_12_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 148 16 ]
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_16_151_16_if_stmt:
+        symbol [ apneaTables %tmp.116 148 20 31 ];
+        %tmp.116 = getv ? :apneaTables;
+        %tmp.117 = lgetv %i.4;
+        symbol [ i %tmp.117 148 32 33 ];
+        %tmp.118 = agetv %tmp.116 %tmp.117;
+        symbol [ name %tmp.119 148 35 39 ];
+        %tmp.119 = getv %tmp.118 :name;
+        symbol [ userSettings %tmp.121 148 43 55 ];
+        %tmp.121 = getv ? :userSettings;
+        symbol [ favoriteApneaTable %tmp.122 148 56 74 ];
+        %tmp.122 = getv %tmp.121 :favoriteApneaTable;
+        %tmp.123 = eq %tmp.119 %tmp.122;
+        bf %tmp.123 @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_16_151_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_16_151_16_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_76_151_16_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 149 20 ]
+        %tmp.124 = lgetv %i.4;
+        symbol [ i %tmp.124 149 35 36 ];
+        lputv %currentIndex.3 %tmp.124;
+        symbol [ currentIndex %currentIndex.3 149 20 32 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 150 20 ]
+        goto break @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_76_151_16_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_16_151_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_148_16_151_16_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_57_152_12_stop:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_incr:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 147 ]
+        %tmp.127 = lgetv %i.4;
+        symbol [ i %tmp.127 147 52 53 ];
+        %tmp.128 = add %tmp.127 1;
+        lputv %i.4 %tmp.128;
+        symbol [ i %i.4 147 52 53 ];
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_test;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_147_12_152_12_for_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 153 12 ]
+        %tmp.129 = lgetv %currentIndex.3;
+        symbol [ currentIndex %tmp.129 153 28 40 ];
+        %tmp.130 = 1;
+        %tmp.131 = add %tmp.129 %tmp.130;
+        symbol [ apneaTables %tmp.133 153 48 59 ];
+        %tmp.133 = getv ? :apneaTables;
+        symbol [ size %tmp.134 153 60 64 ];
+        %tmp.134 = getv function %tmp.133 :size;
+        %tmp.135 = invoke %tmp.133 %tmp.134();
+        %tmp.136 = mod %tmp.131 %tmp.135;
+        lputv %currentIndex.3 %tmp.136;
+        symbol [ currentIndex %currentIndex.3 153 12 24 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 154 12 ]
+        symbol [ userSettings %tmp.137 154 12 24 ];
+        %tmp.137 = getv self :userSettings;
+        symbol [ apneaTables %tmp.139 154 46 57 ];
+        %tmp.139 = getv ? :apneaTables;
+        %tmp.140 = lgetv %currentIndex.3;
+        symbol [ currentIndex %tmp.140 154 58 70 ];
+        %tmp.141 = agetv %tmp.139 %tmp.140;
+        symbol [ name %tmp.142 154 72 76 ];
+        %tmp.142 = getv %tmp.141 :name;
+        symbol [ favoriteApneaTable ? 154 25 43 ];
+        putv %tmp.137 :favoriteApneaTable %tmp.142;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_38_155_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_15_155_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_144_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_141_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_138_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_132_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_129_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_118_15_155_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_115_8_155_8_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc" 156 8 ]
+        %tmp.143 = self;
+        symbol [ updateDisplay %tmp.144 156 8 21 ];
+        %tmp.144 = getv function %tmp.143 :updateDisplay;
+        invoke %tmp.143 %tmp.144();
+C__Users_genti_Dev_DiveZimut_source_views_SettingsView_mc_114_37_157_4_stop:
+    }
+}
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\SettingsView.mc"; @line = 1; ]
+<init> {
+}

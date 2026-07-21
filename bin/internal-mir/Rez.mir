@@ -1,0 +1,1552 @@
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Strings,8,11,18]; ]
+    module Strings {
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [instruction_hold_full,9,27,48]; @symbol_type<0> = [ResourceId,9,52,62]; ]
+        var instruction_hold_full as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [exercise_coherence,10,27,45]; @symbol_type<0> = [ResourceId,10,49,59]; ]
+        var exercise_coherence as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [instruction_hold_empty,11,27,49]; @symbol_type<0> = [ResourceId,11,53,63]; ]
+        var instruction_hold_empty as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [exercise_triangle,12,27,44]; @symbol_type<0> = [ResourceId,12,48,58]; ]
+        var exercise_triangle as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [menu_about,13,27,37]; @symbol_type<0> = [ResourceId,13,41,51]; ]
+        var menu_about as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [app_name,14,27,35]; @symbol_type<0> = [ResourceId,14,39,49]; ]
+        var app_name as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [exercise_square,15,27,42]; @symbol_type<0> = [ResourceId,15,46,56]; ]
+        var exercise_square as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [instruction_expire,16,27,45]; @symbol_type<0> = [ResourceId,16,49,59]; ]
+        var instruction_expire as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [exercise_478,17,27,39]; @symbol_type<0> = [ResourceId,17,43,53]; ]
+        var exercise_478 as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [menu_history,18,27,39]; @symbol_type<0> = [ResourceId,18,43,53]; ]
+        var menu_history as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [instruction_inspire,19,27,46]; @symbol_type<0> = [ResourceId,19,50,60]; ]
+        var instruction_inspire as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; @symbol_vardef = [settings_default_duration,20,27,52]; @symbol_type<0> = [ResourceId,20,56,66]; ]
+        var settings_default_duration as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [settings_vibration,21,27,45]; @symbol_type<0> = [ResourceId,21,49,59]; ]
+        var settings_vibration as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 22; @position = 27; initialized = true; @symbol_vardef = [app_description,22,27,42]; @symbol_type<0> = [ResourceId,22,46,56]; ]
+        var app_description as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 23; @position = 27; initialized = true; @symbol_vardef = [menu_settings,23,27,40]; @symbol_type<0> = [ResourceId,23,44,54]; ]
+        var menu_settings as ResourceId;
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 24; @position = 27; initialized = true; @symbol_vardef = [settings_favorite_exercise,24,27,53]; @symbol_type<0> = [ResourceId,24,57,67]; ]
+        var settings_favorite_exercise as ResourceId;
+    }
+    [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 27; @symbol_moduledef = [Styles,27,11,17]; ]
+    module Styles {
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 27; ]
+        <init> {
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 28; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,28,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 28; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 29; @position = 18; @symbol_constdef = [exclude,29,18,25]; @symbol_type<0> = [Boolean,29,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 32; @symbol_moduledef = [system_size__menu_header,32,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 32; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 33; @position = 18; @symbol_constdef = [width,33,18,23]; @symbol_type<0> = [Number,33,27,33]; ]
+            const width as Number = 175;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 34; @position = 18; @symbol_constdef = [height,34,18,24]; @symbol_type<0> = [Number,34,28,34]; ]
+            const height as Number = 62;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 37; @symbol_moduledef = [system_loc__hint_button_left_bottom,37,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 37; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 38; @position = 18; @symbol_constdef = [exclude,38,18,25]; @symbol_type<0> = [Boolean,38,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 41; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,41,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 41; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [exclude,42,18,25]; @symbol_type<0> = [Boolean,42,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 45; @symbol_moduledef = [prompt_loc__body_no_title,45,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 45; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [x,46,18,19]; @symbol_type<0> = [Number,46,23,29]; ]
+            const x as Number = 5;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [y,47,18,19]; @symbol_type<0> = [Number,47,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 50; @symbol_moduledef = [system_icon_dark__about,50,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [filename,51,18,26]; @symbol_type<0> = [String,51,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__about.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [disableTransparency,52,18,37]; @symbol_type<0> = [Boolean,52,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [dithering,53,18,27]; @symbol_type<0> = [String,53,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [automaticPalette,54,18,34]; @symbol_type<0> = [Boolean,54,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 57; @symbol_moduledef = [system_icon_light__question,57,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 57; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [filename,58,18,26]; @symbol_type<0> = [String,58,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__question.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [disableTransparency,59,18,37]; @symbol_type<0> = [Boolean,59,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [dithering,60,18,27]; @symbol_type<0> = [String,60,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [automaticPalette,61,18,34]; @symbol_type<0> = [Boolean,61,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 64; @symbol_moduledef = [system_loc__hint_button_left_top,64,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 64; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [exclude,65,18,25]; @symbol_type<0> = [Boolean,65,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 68; @symbol_moduledef = [prompt_font__title,68,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 68; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 69 18 ]
+                symbol [ Graphics %tmp.1 69 34 42 ];
+                %tmp.1 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_RIGHT %tmp.2 69 43 61 ];
+                %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_RIGHT;
+                symbol [ Graphics %tmp.3 69 62 70 ];
+                %tmp.3 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.4 69 71 91 ];
+                %tmp.4 = getv %tmp.3 :TEXT_JUSTIFY_VCENTER;
+                %tmp.5 = bitor %tmp.2 %tmp.4;
+                putv self :justification %tmp.5;
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 70 18 ]
+                symbol [ Graphics %tmp.6 70 25 33 ];
+                %tmp.6 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.7 70 34 43 ];
+                %tmp.7 = getv %tmp.6 :FONT_TINY;
+                putv self :font %tmp.7;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [justification,69,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [font,70,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 73; @symbol_moduledef = [system_icon_dark__discard,73,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 73; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [filename,74,18,26]; @symbol_type<0> = [String,74,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [disableTransparency,75,18,37]; @symbol_type<0> = [Boolean,75,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [dithering,76,18,27]; @symbol_type<0> = [String,76,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [automaticPalette,77,18,34]; @symbol_type<0> = [Boolean,77,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 80; @symbol_moduledef = [system_size__menu_item,80,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 80; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [width,81,18,23]; @symbol_type<0> = [Number,81,27,33]; ]
+            const width as Number = 175;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [height,82,18,24]; @symbol_type<0> = [Number,82,28,34]; ]
+            const height as Number = 58;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 85; @symbol_moduledef = [system_color_dark__text,85,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 85; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 87 18 ]
+                symbol [ Graphics %tmp.8 87 31 39 ];
+                %tmp.8 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.9 87 40 57 ];
+                %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
+                putv self :background %tmp.9;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [color,86,18,23]; @symbol_type<0> = [Number,86,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [background,87,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 90; @symbol_moduledef = [system_icon_destructive__discard,90,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 90; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [filename,91,18,26]; @symbol_type<0> = [String,91,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [disableTransparency,92,18,37]; @symbol_type<0> = [Boolean,92,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [dithering,93,18,27]; @symbol_type<0> = [String,93,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [automaticPalette,94,18,34]; @symbol_type<0> = [Boolean,94,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 97; @symbol_moduledef = [system_icon_dark__hint_action_menu,97,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 97; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [filename,98,18,26]; @symbol_type<0> = [String,98,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [disableTransparency,99,18,37]; @symbol_type<0> = [Boolean,99,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [dithering,100,18,27]; @symbol_type<0> = [String,100,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [automaticPalette,101,18,34]; @symbol_type<0> = [Boolean,101,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 104; @symbol_moduledef = [prompt_size__title,104,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 104; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [width,105,18,23]; @symbol_type<0> = [Number,105,27,33]; ]
+            const width as Number = 67;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [height,106,18,24]; @symbol_type<0> = [Number,106,28,34]; ]
+            const height as Number = 60;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 109; @symbol_moduledef = [confirmation_font__body,109,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 109; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 110 18 ]
+                symbol [ Graphics %tmp.10 110 34 42 ];
+                %tmp.10 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.11 110 43 62 ];
+                %tmp.11 = getv %tmp.10 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.11;
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 111 18 ]
+                symbol [ Graphics %tmp.12 111 25 33 ];
+                %tmp.12 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.13 111 34 44 ];
+                %tmp.13 = getv %tmp.12 :FONT_XTINY;
+                putv self :font %tmp.13;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 110; @position = 18; @symbol_constdef = [justification,110,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [font,111,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 114; @symbol_moduledef = [system_color_dark__background,114,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 114; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [color,115,18,23]; @symbol_type<0> = [Number,115,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [background,116,18,28]; @symbol_type<0> = [Number,116,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 119; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,119,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 119; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [exclude,120,18,25]; @symbol_type<0> = [Boolean,120,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 123; @symbol_moduledef = [system_size__launch_icon,123,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 123; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [scaleX,124,18,24]; @symbol_type<0> = [Number,124,28,34]; ]
+            const scaleX as Number = 62;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [scaleY,125,18,24]; @symbol_type<0> = [Number,125,28,34]; ]
+            const scaleY as Number = 62;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 126; @position = 18; @symbol_constdef = [scaleRelativeTo,126,18,33]; @symbol_type<0> = [String,126,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 129; @symbol_moduledef = [confirmation_input__confirm,129,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 129; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 130 18 ]
+                symbol [ WatchUi %tmp.14 130 27 34 ];
+                %tmp.14 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.15 130 35 44 ];
+                %tmp.15 = getv %tmp.14 :KEY_ENTER;
+                putv self :button %tmp.15;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [button,130,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 133; @symbol_moduledef = [prompt_font__body_with_title,133,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 133; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 134 18 ]
+                symbol [ Graphics %tmp.16 134 34 42 ];
+                %tmp.16 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.17 134 43 62 ];
+                %tmp.17 = getv %tmp.16 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.17;
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 135 18 ]
+                symbol [ Graphics %tmp.18 135 25 33 ];
+                %tmp.18 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.19 135 34 43 ];
+                %tmp.19 = getv %tmp.18 :FONT_TINY;
+                putv self :font %tmp.19;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [justification,134,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [font,135,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 138; @symbol_moduledef = [confirmation_loc__body,138,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [x,139,18,19]; @symbol_type<0> = [Number,139,23,29]; ]
+            const x as Number = 2;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [y,140,18,19]; @symbol_type<0> = [Number,140,23,29]; ]
+            const y as Number = 81;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 143; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,143,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 143; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [exclude,144,18,25]; @symbol_type<0> = [Boolean,144,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 147; @symbol_moduledef = [prompt_color_dark__background,147,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [background,148,18,28]; @symbol_type<0> = [Number,148,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 151; @symbol_moduledef = [system_icon_destructive__hint_action_menu,151,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 151; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [filename,152,18,26]; @symbol_type<0> = [String,152,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [disableTransparency,153,18,37]; @symbol_type<0> = [Boolean,153,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [dithering,154,18,27]; @symbol_type<0> = [String,154,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [automaticPalette,155,18,34]; @symbol_type<0> = [Boolean,155,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 158; @symbol_moduledef = [system_loc__hint_action_menu,158,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [x,159,18,19]; @symbol_type<0> = [Number,159,23,29]; ]
+            const x as Number = 166;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [y,160,18,19]; @symbol_type<0> = [Number,160,23,29]; ]
+            const y as Number = 31;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [horizontalJustification,161,18,41]; @symbol_type<0> = [String,161,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [verticalJustification,162,18,39]; @symbol_type<0> = [String,162,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 165; @symbol_moduledef = [confirmation_icon__hint_confirm,165,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 165; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [filename,166,18,26]; @symbol_type<0> = [String,166,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 167; @position = 18; @symbol_constdef = [disableTransparency,167,18,37]; @symbol_type<0> = [Boolean,167,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [dithering,168,18,27]; @symbol_type<0> = [String,168,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [automaticPalette,169,18,34]; @symbol_type<0> = [Boolean,169,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 172; @symbol_moduledef = [system_loc__hint_button_left_middle,172,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 172; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [exclude,173,18,25]; @symbol_type<0> = [Boolean,173,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 176; @symbol_moduledef = [prompt_size__body_no_title,176,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [width,177,18,23]; @symbol_type<0> = [Number,177,27,33]; ]
+            const width as Number = 166;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [height,178,18,24]; @symbol_type<0> = [Number,178,28,34]; ]
+            const height as Number = 99;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 181; @symbol_moduledef = [system_icon_light__hint_button_left_top,181,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 181; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [exclude,182,18,25]; @symbol_type<0> = [Boolean,182,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 185; @symbol_moduledef = [prompt_color_light__background,185,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 185; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [background,186,18,28]; @symbol_type<0> = [Number,186,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 189; @symbol_moduledef = [confirmation_input__delete,189,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 189; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 190 18 ]
+                symbol [ WatchUi %tmp.20 190 27 34 ];
+                %tmp.20 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.21 190 35 44 ];
+                %tmp.21 = getv %tmp.20 :KEY_ENTER;
+                putv self :button %tmp.21;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [button,190,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 193; @symbol_moduledef = [system_icon_dark__hint_button_left_top,193,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 193; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [exclude,194,18,25]; @symbol_type<0> = [Boolean,194,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 197; @symbol_moduledef = [system_input__action_menu,197,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 198 18 ]
+                symbol [ WatchUi %tmp.22 198 27 34 ];
+                %tmp.22 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.23 198 35 44 ];
+                %tmp.23 = getv %tmp.22 :KEY_ENTER;
+                putv self :button %tmp.23;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [button,198,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 201; @symbol_moduledef = [system_icon_light__save,201,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [filename,202,18,26]; @symbol_type<0> = [String,202,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__save.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [disableTransparency,203,18,37]; @symbol_type<0> = [Boolean,203,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [dithering,204,18,27]; @symbol_type<0> = [String,204,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [automaticPalette,205,18,34]; @symbol_type<0> = [Boolean,205,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 208; @symbol_moduledef = [prompt_color_light__body,208,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 208; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 210 18 ]
+                symbol [ Graphics %tmp.24 210 31 39 ];
+                %tmp.24 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.25 210 40 57 ];
+                %tmp.25 = getv %tmp.24 :COLOR_TRANSPARENT;
+                putv self :background %tmp.25;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [color,209,18,23]; @symbol_type<0> = [Number,209,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [background,210,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 213; @symbol_moduledef = [system_loc__subwindow,213,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 213; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 214; @position = 18; @symbol_constdef = [x,214,18,19]; @symbol_type<0> = [Number,214,23,29]; ]
+            const x as Number = 114;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [y,215,18,19]; @symbol_type<0> = [Number,215,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 218; @symbol_moduledef = [system_icon_light__warning,218,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [filename,219,18,26]; @symbol_type<0> = [String,219,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__warning.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [disableTransparency,220,18,37]; @symbol_type<0> = [Boolean,220,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [dithering,221,18,27]; @symbol_type<0> = [String,221,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [automaticPalette,222,18,34]; @symbol_type<0> = [Boolean,222,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 225; @symbol_moduledef = [confirmation_color_light__body,225,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 225; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 227 18 ]
+                symbol [ Graphics %tmp.26 227 31 39 ];
+                %tmp.26 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.27 227 40 57 ];
+                %tmp.27 = getv %tmp.26 :COLOR_TRANSPARENT;
+                putv self :background %tmp.27;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [color,226,18,23]; @symbol_type<0> = [Number,226,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [background,227,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 230; @symbol_moduledef = [confirmation_icon_light__hint_keep,230,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 230; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [filename,231,18,26]; @symbol_type<0> = [String,231,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [disableTransparency,232,18,37]; @symbol_type<0> = [Boolean,232,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [dithering,233,18,27]; @symbol_type<0> = [String,233,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [automaticPalette,234,18,34]; @symbol_type<0> = [Boolean,234,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 237; @symbol_moduledef = [activity_color_light__background,237,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 237; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 238; @position = 18; @symbol_constdef = [color,238,18,23]; @symbol_type<0> = [Number,238,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [background,239,18,28]; @symbol_type<0> = [Number,239,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 242; @symbol_moduledef = [system_icon_positive__hint_button_right_top,242,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [filename,243,18,26]; @symbol_type<0> = [String,243,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [disableTransparency,244,18,37]; @symbol_type<0> = [Boolean,244,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [dithering,245,18,27]; @symbol_type<0> = [String,245,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [automaticPalette,246,18,34]; @symbol_type<0> = [Boolean,246,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 249; @symbol_moduledef = [system_size__screen,249,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [width,250,18,23]; @symbol_type<0> = [Number,250,27,33]; ]
+            const width as Number = 176;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [height,251,18,24]; @symbol_type<0> = [Number,251,28,34]; ]
+            const height as Number = 176;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 254; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,254,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [exclude,255,18,25]; @symbol_type<0> = [Boolean,255,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 258; @symbol_moduledef = [system_color_light__background,258,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [color,259,18,23]; @symbol_type<0> = [Number,259,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [background,260,18,28]; @symbol_type<0> = [Number,260,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 263; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,263,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [filename,264,18,26]; @symbol_type<0> = [String,264,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [disableTransparency,265,18,37]; @symbol_type<0> = [Boolean,265,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [dithering,266,18,27]; @symbol_type<0> = [String,266,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [automaticPalette,267,18,34]; @symbol_type<0> = [Boolean,267,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 270; @symbol_moduledef = [confirmation_loc__hint_confirm,270,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [x,271,18,19]; @symbol_type<0> = [Number,271,23,29]; ]
+            const x as Number = 113;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [y,272,18,19]; @symbol_type<0> = [Number,272,23,29]; ]
+            const y as Number = 1;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 275; @symbol_moduledef = [activity_color_dark__text,275,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 275; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 277 18 ]
+                symbol [ Graphics %tmp.28 277 31 39 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.29 277 40 57 ];
+                %tmp.29 = getv %tmp.28 :COLOR_TRANSPARENT;
+                putv self :background %tmp.29;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [color,276,18,23]; @symbol_type<0> = [Number,276,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [background,277,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 280; @symbol_moduledef = [confirmation_input__keep,280,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 280; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 281 18 ]
+                symbol [ WatchUi %tmp.30 281 27 34 ];
+                %tmp.30 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.31 281 35 43 ];
+                %tmp.31 = getv %tmp.30 :KEY_DOWN;
+                putv self :button %tmp.31;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [button,281,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 284; @symbol_moduledef = [prompt_loc__body_with_title,284,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [x,285,18,19]; @symbol_type<0> = [Number,285,23,29]; ]
+            const x as Number = 5;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [y,286,18,19]; @symbol_type<0> = [Number,286,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 289; @symbol_moduledef = [system_icon_dark__search,289,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [filename,290,18,26]; @symbol_type<0> = [String,290,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__search.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [disableTransparency,291,18,37]; @symbol_type<0> = [Boolean,291,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [dithering,292,18,27]; @symbol_type<0> = [String,292,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [automaticPalette,293,18,34]; @symbol_type<0> = [Boolean,293,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 296; @symbol_moduledef = [activity_color_light__text,296,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 296; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 298 18 ]
+                symbol [ Graphics %tmp.32 298 31 39 ];
+                %tmp.32 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.33 298 40 57 ];
+                %tmp.33 = getv %tmp.32 :COLOR_TRANSPARENT;
+                putv self :background %tmp.33;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [color,297,18,23]; @symbol_type<0> = [Number,297,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [background,298,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 301; @symbol_moduledef = [confirmation_icon__hint_keep,301,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [filename,302,18,26]; @symbol_type<0> = [String,302,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [disableTransparency,303,18,37]; @symbol_type<0> = [Boolean,303,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [dithering,304,18,27]; @symbol_type<0> = [String,304,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [automaticPalette,305,18,34]; @symbol_type<0> = [Boolean,305,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 308; @symbol_moduledef = [system_icon_dark__save,308,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [filename,309,18,26]; @symbol_type<0> = [String,309,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__save.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [disableTransparency,310,18,37]; @symbol_type<0> = [Boolean,310,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [dithering,311,18,27]; @symbol_type<0> = [String,311,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [automaticPalette,312,18,34]; @symbol_type<0> = [Boolean,312,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 315; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,315,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 315; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [exclude,316,18,25]; @symbol_type<0> = [Boolean,316,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 319; @symbol_moduledef = [system_icon_light__search,319,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 319; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [filename,320,18,26]; @symbol_type<0> = [String,320,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__search.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [disableTransparency,321,18,37]; @symbol_type<0> = [Boolean,321,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [dithering,322,18,27]; @symbol_type<0> = [String,322,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [automaticPalette,323,18,34]; @symbol_type<0> = [Boolean,323,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 326; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,326,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [exclude,327,18,25]; @symbol_type<0> = [Boolean,327,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 330; @symbol_moduledef = [system_icon_positive__hint_button_left_top,330,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 330; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [exclude,331,18,25]; @symbol_type<0> = [Boolean,331,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 334; @symbol_moduledef = [system_loc__hint_button_right_bottom,334,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 334; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [exclude,335,18,25]; @symbol_type<0> = [Boolean,335,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 338; @symbol_moduledef = [confirmation_icon_dark__hint_reject,338,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 338; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [filename,339,18,26]; @symbol_type<0> = [String,339,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [disableTransparency,340,18,37]; @symbol_type<0> = [Boolean,340,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [dithering,341,18,27]; @symbol_type<0> = [String,341,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [automaticPalette,342,18,34]; @symbol_type<0> = [Boolean,342,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 345; @symbol_moduledef = [confirmation_color_dark__body,345,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 345; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 347 18 ]
+                symbol [ Graphics %tmp.34 347 31 39 ];
+                %tmp.34 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.35 347 40 57 ];
+                %tmp.35 = getv %tmp.34 :COLOR_TRANSPARENT;
+                putv self :background %tmp.35;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [color,346,18,23]; @symbol_type<0> = [Number,346,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [background,347,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 350; @symbol_moduledef = [confirmation_icon_light__hint_confirm,350,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 350; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [filename,351,18,26]; @symbol_type<0> = [String,351,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [disableTransparency,352,18,37]; @symbol_type<0> = [Boolean,352,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [dithering,353,18,27]; @symbol_type<0> = [String,353,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [automaticPalette,354,18,34]; @symbol_type<0> = [Boolean,354,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 357; @symbol_moduledef = [prompt_color_dark__title,357,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 357; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 359 18 ]
+                symbol [ Graphics %tmp.36 359 31 39 ];
+                %tmp.36 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.37 359 40 57 ];
+                %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+                putv self :background %tmp.37;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [color,358,18,23]; @symbol_type<0> = [Number,358,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [background,359,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 362; @symbol_moduledef = [system_icon_destructive__cancel,362,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [filename,363,18,26]; @symbol_type<0> = [String,363,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [disableTransparency,364,18,37]; @symbol_type<0> = [Boolean,364,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [dithering,365,18,27]; @symbol_type<0> = [String,365,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [automaticPalette,366,18,34]; @symbol_type<0> = [Boolean,366,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 369; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,369,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 369; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [exclude,370,18,25]; @symbol_type<0> = [Boolean,370,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 373; @symbol_moduledef = [prompt_loc__title,373,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 373; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [x,374,18,19]; @symbol_type<0> = [Number,374,23,29]; ]
+            const x as Number = 25;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [y,375,18,19]; @symbol_type<0> = [Number,375,23,29]; ]
+            const y as Number = 9;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 378; @symbol_moduledef = [confirmation_font_enhanced_readability__body,378,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [exclude,379,18,25]; @symbol_type<0> = [Boolean,379,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 382; @symbol_moduledef = [prompt_color_light__title,382,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 382; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 384 18 ]
+                symbol [ Graphics %tmp.38 384 31 39 ];
+                %tmp.38 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.39 384 40 57 ];
+                %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+                putv self :background %tmp.39;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [color,383,18,23]; @symbol_type<0> = [Number,383,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [background,384,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 387; @symbol_moduledef = [system_icon_dark__hint_button_right_top,387,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [filename,388,18,26]; @symbol_type<0> = [String,388,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [disableTransparency,389,18,37]; @symbol_type<0> = [Boolean,389,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [dithering,390,18,27]; @symbol_type<0> = [String,390,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [automaticPalette,391,18,34]; @symbol_type<0> = [Boolean,391,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 394; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,394,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 394; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [exclude,395,18,25]; @symbol_type<0> = [Boolean,395,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 398; @symbol_moduledef = [confirmation_icon_dark__hint_keep,398,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [filename,399,18,26]; @symbol_type<0> = [String,399,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [disableTransparency,400,18,37]; @symbol_type<0> = [Boolean,400,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [dithering,401,18,27]; @symbol_type<0> = [String,401,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [automaticPalette,402,18,34]; @symbol_type<0> = [Boolean,402,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 405; @symbol_moduledef = [system_icon_light__cancel,405,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 405; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 406; @position = 18; @symbol_constdef = [filename,406,18,26]; @symbol_type<0> = [String,406,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__cancel.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [disableTransparency,407,18,37]; @symbol_type<0> = [Boolean,407,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [dithering,408,18,27]; @symbol_type<0> = [String,408,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [automaticPalette,409,18,34]; @symbol_type<0> = [Boolean,409,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 412; @symbol_moduledef = [confirmation_icon_light__hint_reject,412,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 412; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [filename,413,18,26]; @symbol_type<0> = [String,413,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [disableTransparency,414,18,37]; @symbol_type<0> = [Boolean,414,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [dithering,415,18,27]; @symbol_type<0> = [String,415,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [automaticPalette,416,18,34]; @symbol_type<0> = [Boolean,416,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 419; @symbol_moduledef = [system_icon_light__about,419,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 419; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [filename,420,18,26]; @symbol_type<0> = [String,420,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__about.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [disableTransparency,421,18,37]; @symbol_type<0> = [Boolean,421,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [dithering,422,18,27]; @symbol_type<0> = [String,422,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [automaticPalette,423,18,34]; @symbol_type<0> = [Boolean,423,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 426; @symbol_moduledef = [system_size__toast_icon,426,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [width,427,18,23]; @symbol_type<0> = [Number,427,27,33]; ]
+            const width as Number = 40;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [scaleRelativeTo,428,18,33]; @symbol_type<0> = [String,428,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 431; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,431,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [exclude,432,18,25]; @symbol_type<0> = [Boolean,432,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 435; @symbol_moduledef = [confirmation_icon__hint_reject,435,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [filename,436,18,26]; @symbol_type<0> = [String,436,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [disableTransparency,437,18,37]; @symbol_type<0> = [Boolean,437,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [dithering,438,18,27]; @symbol_type<0> = [String,438,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [automaticPalette,439,18,34]; @symbol_type<0> = [Boolean,439,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 442; @symbol_moduledef = [system_icon_light__hint_action_menu,442,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [filename,443,18,26]; @symbol_type<0> = [String,443,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [disableTransparency,444,18,37]; @symbol_type<0> = [Boolean,444,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [dithering,445,18,27]; @symbol_type<0> = [String,445,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [automaticPalette,446,18,34]; @symbol_type<0> = [Boolean,446,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 449; @symbol_moduledef = [system_icon_light__hint_button_right_middle,449,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [exclude,450,18,25]; @symbol_type<0> = [Boolean,450,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 453; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,453,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 453; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [exclude,454,18,25]; @symbol_type<0> = [Boolean,454,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 457; @symbol_moduledef = [confirmation_loc__hint_reject,457,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 457; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 458; @position = 18; @symbol_constdef = [x,458,18,19]; @symbol_type<0> = [Number,458,23,29]; ]
+            const x as Number = 0;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [y,459,18,19]; @symbol_type<0> = [Number,459,23,29]; ]
+            const y as Number = 138;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 462; @symbol_moduledef = [confirmation_icon_dark__hint_delete,462,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 462; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [filename,463,18,26]; @symbol_type<0> = [String,463,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [disableTransparency,464,18,37]; @symbol_type<0> = [Boolean,464,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [dithering,465,18,27]; @symbol_type<0> = [String,465,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [automaticPalette,466,18,34]; @symbol_type<0> = [Boolean,466,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 469; @symbol_moduledef = [activity_color_dark__background,469,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 469; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [color,470,18,23]; @symbol_type<0> = [Number,470,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [background,471,18,28]; @symbol_type<0> = [Number,471,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 474; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,474,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [exclude,475,18,25]; @symbol_type<0> = [Boolean,475,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 478; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,478,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [exclude,479,18,25]; @symbol_type<0> = [Boolean,479,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 482; @symbol_moduledef = [system_size__menu_icon,482,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [scaleX,483,18,24]; @symbol_type<0> = [Number,483,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [scaleY,484,18,24]; @symbol_type<0> = [Number,484,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [scaleRelativeTo,485,18,33]; @symbol_type<0> = [String,485,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 488; @symbol_moduledef = [system_icon_destructive__warning,488,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 488; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [filename,489,18,26]; @symbol_type<0> = [String,489,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [disableTransparency,490,18,37]; @symbol_type<0> = [Boolean,490,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [dithering,491,18,27]; @symbol_type<0> = [String,491,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [automaticPalette,492,18,34]; @symbol_type<0> = [Boolean,492,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 495; @symbol_moduledef = [system_loc__hint_button_right_middle,495,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [exclude,496,18,25]; @symbol_type<0> = [Boolean,496,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 499; @symbol_moduledef = [system_icon_dark__cancel,499,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 499; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [filename,500,18,26]; @symbol_type<0> = [String,500,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [disableTransparency,501,18,37]; @symbol_type<0> = [Boolean,501,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [dithering,502,18,27]; @symbol_type<0> = [String,502,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [automaticPalette,503,18,34]; @symbol_type<0> = [Boolean,503,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 506; @symbol_moduledef = [prompt_size__body_with_title,506,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 506; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [width,507,18,23]; @symbol_type<0> = [Number,507,27,33]; ]
+            const width as Number = 166;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [height,508,18,24]; @symbol_type<0> = [Number,508,28,34]; ]
+            const height as Number = 99;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 511; @symbol_moduledef = [system_loc__hint_button_right_top,511,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 511; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [x,512,18,19]; @symbol_type<0> = [Number,512,23,29]; ]
+            const x as Number = 166;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [y,513,18,19]; @symbol_type<0> = [Number,513,23,29]; ]
+            const y as Number = 31;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [horizontalJustification,514,18,41]; @symbol_type<0> = [String,514,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [verticalJustification,515,18,39]; @symbol_type<0> = [String,515,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 518; @symbol_moduledef = [system_color_light__text,518,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 518; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 520 18 ]
+                symbol [ Graphics %tmp.40 520 31 39 ];
+                %tmp.40 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.41 520 40 57 ];
+                %tmp.41 = getv %tmp.40 :COLOR_TRANSPARENT;
+                putv self :background %tmp.41;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [color,519,18,23]; @symbol_type<0> = [Number,519,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [background,520,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 523; @symbol_moduledef = [system_icon_light__check,523,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [filename,524,18,26]; @symbol_type<0> = [String,524,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__check.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [disableTransparency,525,18,37]; @symbol_type<0> = [Boolean,525,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [dithering,526,18,27]; @symbol_type<0> = [String,526,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [automaticPalette,527,18,34]; @symbol_type<0> = [Boolean,527,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 530; @symbol_moduledef = [confirmation_input__reject,530,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 530; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 531 18 ]
+                symbol [ WatchUi %tmp.42 531 27 34 ];
+                %tmp.42 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.43 531 35 43 ];
+                %tmp.43 = getv %tmp.42 :KEY_DOWN;
+                putv self :button %tmp.43;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [button,531,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 534; @symbol_moduledef = [system_icon_light__revert,534,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [filename,535,18,26]; @symbol_type<0> = [String,535,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__revert.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [disableTransparency,536,18,37]; @symbol_type<0> = [Boolean,536,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [dithering,537,18,27]; @symbol_type<0> = [String,537,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [automaticPalette,538,18,34]; @symbol_type<0> = [Boolean,538,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 541; @symbol_moduledef = [system_size__subwindow,541,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 541; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [width,542,18,23]; @symbol_type<0> = [Number,542,27,33]; ]
+            const width as Number = 62;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [height,543,18,24]; @symbol_type<0> = [Number,543,28,34]; ]
+            const height as Number = 62;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 546; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,546,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 546; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [exclude,547,18,25]; @symbol_type<0> = [Boolean,547,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 550; @symbol_moduledef = [system_icon_dark__check,550,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 550; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [filename,551,18,26]; @symbol_type<0> = [String,551,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 552; @position = 18; @symbol_constdef = [disableTransparency,552,18,37]; @symbol_type<0> = [Boolean,552,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [dithering,553,18,27]; @symbol_type<0> = [String,553,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [automaticPalette,554,18,34]; @symbol_type<0> = [Boolean,554,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 557; @symbol_moduledef = [confirmation_loc__hint_keep,557,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [x,558,18,19]; @symbol_type<0> = [Number,558,23,29]; ]
+            const x as Number = 0;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [y,559,18,19]; @symbol_type<0> = [Number,559,23,29]; ]
+            const y as Number = 138;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 562; @symbol_moduledef = [confirmation_loc__hint_delete,562,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 562; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [verticallJustification,563,18,40]; @symbol_type<0> = [String,563,44,50]; ]
+            const verticallJustification as String = "center";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [x,564,18,19]; @symbol_type<0> = [Number,564,23,29]; ]
+            const x as Number = 146;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [y,565,18,19]; @symbol_type<0> = [Number,565,23,29]; ]
+            const y as Number = 15;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [horizontalJustification,566,18,41]; @symbol_type<0> = [String,566,45,51]; ]
+            const horizontalJustification as String = "center";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 569; @symbol_moduledef = [system_icon_positive__hint_action_menu,569,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 569; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [filename,570,18,26]; @symbol_type<0> = [String,570,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [disableTransparency,571,18,37]; @symbol_type<0> = [Boolean,571,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [dithering,572,18,27]; @symbol_type<0> = [String,572,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [automaticPalette,573,18,34]; @symbol_type<0> = [Boolean,573,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 576; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,576,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 576; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [exclude,577,18,25]; @symbol_type<0> = [Boolean,577,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 580; @symbol_moduledef = [system_icon_light__hint_button_left_middle,580,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 580; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [exclude,581,18,25]; @symbol_type<0> = [Boolean,581,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 584; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,584,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 584; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [exclude,585,18,25]; @symbol_type<0> = [Boolean,585,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 588; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,588,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [exclude,589,18,25]; @symbol_type<0> = [Boolean,589,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 592; @symbol_moduledef = [system_icon_dark__revert,592,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [filename,593,18,26]; @symbol_type<0> = [String,593,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__revert.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [disableTransparency,594,18,37]; @symbol_type<0> = [Boolean,594,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [dithering,595,18,27]; @symbol_type<0> = [String,595,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [automaticPalette,596,18,34]; @symbol_type<0> = [Boolean,596,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 599; @symbol_moduledef = [confirmation_icon_light__hint_delete,599,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 599; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [filename,600,18,26]; @symbol_type<0> = [String,600,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [disableTransparency,601,18,37]; @symbol_type<0> = [Boolean,601,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [dithering,602,18,27]; @symbol_type<0> = [String,602,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [automaticPalette,603,18,34]; @symbol_type<0> = [Boolean,603,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 606; @symbol_moduledef = [system_icon_dark__question,606,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 606; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [filename,607,18,26]; @symbol_type<0> = [String,607,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__question.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [disableTransparency,608,18,37]; @symbol_type<0> = [Boolean,608,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [dithering,609,18,27]; @symbol_type<0> = [String,609,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [automaticPalette,610,18,34]; @symbol_type<0> = [Boolean,610,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 613; @symbol_moduledef = [system_icon_light__discard,613,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 613; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [filename,614,18,26]; @symbol_type<0> = [String,614,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__discard.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [disableTransparency,615,18,37]; @symbol_type<0> = [Boolean,615,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [dithering,616,18,27]; @symbol_type<0> = [String,616,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [automaticPalette,617,18,34]; @symbol_type<0> = [Boolean,617,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 620; @symbol_moduledef = [device_info,620,15,26]; ]
+        module device_info {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 620; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 622 18 ]
+                symbol [ Toybox %tmp.45 622 32 38 ];
+                %tmp.45 = getv ? :Toybox;
+                symbol [ System %tmp.46 622 39 45 ];
+                %tmp.46 = getv %tmp.45 :System;
+                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.47 622 46 71 ];
+                %tmp.47 = getv %tmp.46 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.47;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [screenWidth,621,18,29]; @symbol_type<0> = [Number,621,33,39]; ]
+            const screenWidth as Number = 176;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [screenShape,622,18,29]; ]
+            const screenShape;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [hasNightMode,623,18,30]; @symbol_type<0> = [Boolean,623,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [hasGpu,624,18,24]; @symbol_type<0> = [Boolean,624,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [screenHeight,625,18,30]; @symbol_type<0> = [Number,625,34,40]; ]
+            const screenHeight as Number = 176;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [hasTouchScreen,626,18,32]; @symbol_type<0> = [Boolean,626,36,43]; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,627,18,44]; @symbol_type<0> = [Boolean,627,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 630; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,630,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 630; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [filename,631,18,26]; @symbol_type<0> = [String,631,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [disableTransparency,632,18,37]; @symbol_type<0> = [Boolean,632,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [dithering,633,18,27]; @symbol_type<0> = [String,633,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [automaticPalette,634,18,34]; @symbol_type<0> = [Boolean,634,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 637; @symbol_moduledef = [prompt_font__body_no_title,637,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 637; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 638 18 ]
+                symbol [ Graphics %tmp.48 638 34 42 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.49 638 43 62 ];
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.49;
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 639 18 ]
+                symbol [ Graphics %tmp.50 639 25 33 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.51 639 34 43 ];
+                %tmp.51 = getv %tmp.50 :FONT_TINY;
+                putv self :font %tmp.51;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [justification,638,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [font,639,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 642; @symbol_moduledef = [prompt_size__title_icon,642,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 642; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [scaleX,643,18,24]; @symbol_type<0> = [Number,643,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [scaleY,644,18,24]; @symbol_type<0> = [Number,644,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [scaleRelativeTo,645,18,33]; @symbol_type<0> = [String,645,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 648; @symbol_moduledef = [system_icon_dark__warning,648,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 648; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [filename,649,18,26]; @symbol_type<0> = [String,649,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [disableTransparency,650,18,37]; @symbol_type<0> = [Boolean,650,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [dithering,651,18,27]; @symbol_type<0> = [String,651,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [automaticPalette,652,18,34]; @symbol_type<0> = [Boolean,652,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 655; @symbol_moduledef = [prompt_loc__title_icon,655,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 655; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [x,656,18,19]; @symbol_type<0> = [Number,656,23,29]; ]
+            const x as Number = 145;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [y,657,18,19]; @symbol_type<0> = [Number,657,23,29]; ]
+            const y as Number = 31;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [horizontalJustification,658,18,41]; @symbol_type<0> = [String,658,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [verticalJustification,659,18,39]; @symbol_type<0> = [String,659,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 662; @symbol_moduledef = [prompt_font_enhanced_readability__title,662,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 662; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [exclude,663,18,25]; @symbol_type<0> = [Boolean,663,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 666; @symbol_moduledef = [prompt_color_dark__body,666,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 666; ]
+            <init> {
+[ "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen" 668 18 ]
+                symbol [ Graphics %tmp.52 668 31 39 ];
+                %tmp.52 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.53 668 40 57 ];
+                %tmp.53 = getv %tmp.52 :COLOR_TRANSPARENT;
+                putv self :background %tmp.53;
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [color,667,18,23]; @symbol_type<0> = [Number,667,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [background,668,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 671; @symbol_moduledef = [confirmation_icon__hint_delete,671,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 671; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [filename,672,18,26]; @symbol_type<0> = [String,672,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [disableTransparency,673,18,37]; @symbol_type<0> = [Boolean,673,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [dithering,674,18,27]; @symbol_type<0> = [String,674,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [automaticPalette,675,18,34]; @symbol_type<0> = [Boolean,675,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 678; @symbol_moduledef = [system_icon_light__hint_button_right_top,678,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 678; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [filename,679,18,26]; @symbol_type<0> = [String,679,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 680; @position = 18; @symbol_constdef = [disableTransparency,680,18,37]; @symbol_type<0> = [Boolean,680,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [dithering,681,18,27]; @symbol_type<0> = [String,681,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [automaticPalette,682,18,34]; @symbol_type<0> = [Boolean,682,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 685; @symbol_moduledef = [confirmation_size__body,685,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 685; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 686; @position = 18; @symbol_constdef = [width,686,18,23]; @symbol_type<0> = [Number,686,27,33]; ]
+            const width as Number = 173;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [height,687,18,24]; @symbol_type<0> = [Number,687,28,34]; ]
+            const height as Number = 63;
+        }
+        [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 690; @symbol_moduledef = [system_icon_positive__check,690,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 690; ]
+            <init> {
+            }
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [filename,691,18,26]; @symbol_type<0> = [String,691,30,36]; ]
+            const filename as String = "C:\\Users\\genti\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\instinct2x\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 692; @position = 18; @symbol_constdef = [disableTransparency,692,18,37]; @symbol_type<0> = [Boolean,692,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 693; @position = 18; @symbol_constdef = [dithering,693,18,27]; @symbol_type<0> = [String,693,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 694; @position = 18; @symbol_constdef = [automaticPalette,694,18,34]; @symbol_type<0> = [Boolean,694,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+    }
+}
+[ @file = "c:\Users\genti\Dev\DiveZimut\bin\gen\006-B4394-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

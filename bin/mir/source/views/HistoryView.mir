@@ -1,0 +1,606 @@
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; ]
+using Toybox;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [UI,3,13,15]; ]
+using Toybox.UI;
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 6; @symbol_classdef = [HistoryView,6,6,17]; @symbol_extends<0> = [View,6,26,30]; ]
+class HistoryView extends View {
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 7; @position = 8; @symbol_vardef = [historyItems,7,8,20]; ]
+    var historyItems;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 8; @position = 8; @symbol_vardef = [selectedItem,8,8,20]; ]
+    var selectedItem;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_10_26_19_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 11 8 ]
+        symbol [ View %tmp.2 11 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 11 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 12 8 ]
+        %tmp.4 = newa 0;
+        symbol [ historyItems ? 12 8 20 ];
+        putv self :historyItems %tmp.4;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 13 8 ]
+        %tmp.5 = 0;
+        symbol [ selectedItem ? 13 8 20 ];
+        putv self :selectedItem %tmp.5;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 16 8 ]
+        symbol [ historyItems %tmp.7 16 8 20 ];
+        %tmp.7 = getv ? :historyItems;
+        symbol [ push %tmp.8 16 21 25 ];
+        %tmp.8 = getv function %tmp.7 :push;
+        symbol [ HistoryItem %tmp.12 16 30 41 ];
+        %tmp.12 = getv ? :HistoryItem;
+        %tmp.13 = "Carre";
+        %tmp.14 = "2026-07-10";
+        %tmp.15 = 5;
+        %tmp.16 = 20;
+        %tmp.9 = newc %tmp.12 (%tmp.13, %tmp.14, %tmp.15, %tmp.16);
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 17 8 ]
+        symbol [ historyItems %tmp.18 17 8 20 ];
+        %tmp.18 = getv ? :historyItems;
+        symbol [ push %tmp.19 17 21 25 ];
+        %tmp.19 = getv function %tmp.18 :push;
+        symbol [ HistoryItem %tmp.23 17 30 41 ];
+        %tmp.23 = getv ? :HistoryItem;
+        %tmp.24 = "Triangle";
+        %tmp.25 = "2026-07-09";
+        %tmp.26 = 3;
+        %tmp.27 = 15;
+        %tmp.20 = newc %tmp.23 (%tmp.24, %tmp.25, %tmp.26, %tmp.27);
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 18 8 ]
+        symbol [ historyItems %tmp.29 18 8 20 ];
+        %tmp.29 = getv ? :historyItems;
+        symbol [ push %tmp.30 18 21 25 ];
+        %tmp.30 = getv function %tmp.29 :push;
+        symbol [ HistoryItem %tmp.34 18 30 41 ];
+        %tmp.34 = getv ? :HistoryItem;
+        %tmp.35 = "4-7-8";
+        %tmp.36 = "2026-07-08";
+        %tmp.37 = 4;
+        %tmp.38 = 10;
+        %tmp.31 = newc %tmp.34 (%tmp.35, %tmp.36, %tmp.37, %tmp.38);
+        invoke %tmp.29 %tmp.30(%tmp.31);
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_10_26_19_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 21; @symbol_functiondef = [onStart,21,13,20]; ]
+    function onStart() {
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_21_23_23_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 22 8 ]
+        %tmp.1 = self;
+        symbol [ updateDisplay %tmp.2 22 8 21 ];
+        %tmp.2 = getv function %tmp.1 :updateDisplay;
+        invoke %tmp.1 %tmp.2();
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_21_23_23_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 25; @symbol_functiondef = [updateDisplay,25,13,26]; ]
+    function updateDisplay() {
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 26 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop" ]
+        %dc.1 = local;
+        symbol [ dc %dc.1 26 12 14 ];
+        symbol [ View %tmp.2 26 17 21 ];
+        %tmp.2 = getv ? :View;
+        symbol [ getDC %tmp.3 26 22 27 ];
+        %tmp.3 = getv function %tmp.2 :getDC;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %dc.1 %tmp.4;
+        symbol [ dc %dc.1 26 12 14 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 27 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop" ]
+        %width.2 = local;
+        symbol [ width %width.2 27 12 17 ];
+        %tmp.5 = lgetv %dc.1;
+        symbol [ dc %tmp.5 27 20 22 ];
+        symbol [ getWidth %tmp.6 27 23 31 ];
+        %tmp.6 = getv function %tmp.5 :getWidth;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %width.2 %tmp.7;
+        symbol [ width %width.2 27 12 17 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 28 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop" ]
+        %height.3 = local;
+        symbol [ height %height.3 28 12 18 ];
+        %tmp.8 = lgetv %dc.1;
+        symbol [ dc %tmp.8 28 21 23 ];
+        symbol [ getHeight %tmp.9 28 24 33 ];
+        %tmp.9 = getv function %tmp.8 :getHeight;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %height.3 %tmp.10;
+        symbol [ height %height.3 28 12 18 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 31 8 ]
+        %tmp.11 = lgetv %dc.1;
+        symbol [ dc %tmp.11 31 8 10 ];
+        symbol [ setColor %tmp.12 31 11 19 ];
+        %tmp.12 = getv function %tmp.11 :setColor;
+        %tmp.13 = 0;
+        %tmp.14 = 0;
+        %tmp.15 = 0;
+        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14, %tmp.15);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 32 8 ]
+        %tmp.16 = lgetv %dc.1;
+        symbol [ dc %tmp.16 32 8 10 ];
+        symbol [ fillRectangle %tmp.17 32 11 24 ];
+        %tmp.17 = getv function %tmp.16 :fillRectangle;
+        %tmp.18 = 0;
+        %tmp.19 = 0;
+        %tmp.20 = lgetv %width.2;
+        symbol [ width %tmp.20 32 31 36 ];
+        %tmp.21 = lgetv %height.3;
+        symbol [ height %tmp.21 32 38 44 ];
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20, %tmp.21);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 35 8 ]
+        %tmp.22 = lgetv %dc.1;
+        symbol [ dc %tmp.22 35 8 10 ];
+        symbol [ setColor %tmp.23 35 11 19 ];
+        %tmp.23 = getv function %tmp.22 :setColor;
+        %tmp.24 = 255;
+        %tmp.25 = 255;
+        %tmp.26 = 255;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.26);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 36 8 ]
+        %tmp.27 = lgetv %dc.1;
+        symbol [ dc %tmp.27 36 8 10 ];
+        symbol [ setFont %tmp.28 36 11 18 ];
+        %tmp.28 = getv function %tmp.27 :setFont;
+        symbol [ Graphics %tmp.29 36 19 27 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.30 36 28 39 ];
+        %tmp.30 = getv %tmp.29 :FONT_MEDIUM;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 37 8 ]
+        %tmp.31 = lgetv %dc.1;
+        symbol [ dc %tmp.31 37 8 10 ];
+        symbol [ drawText %tmp.32 37 11 19 ];
+        %tmp.32 = getv function %tmp.31 :drawText;
+        %tmp.33 = lgetv %width.2;
+        symbol [ width %tmp.33 37 20 25 ];
+        %tmp.34 = 2;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        %tmp.36 = 20;
+        %tmp.37 = "HISTORIQUE";
+        symbol [ Graphics %tmp.38 37 49 57 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.39 37 58 77 ];
+        %tmp.39 = getv %tmp.38 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.31 %tmp.32(%tmp.35, %tmp.36, %tmp.37, %tmp.39);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 40 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop" ]
+        %y.4 = local;
+        symbol [ y %y.4 40 12 13 ];
+        %tmp.40 = 50;
+        lputv %y.4 %tmp.40;
+        symbol [ y %y.4 40 12 13 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 41 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop" ]
+        %lineHeight.5 = local;
+        symbol [ lineHeight %lineHeight.5 41 12 22 ];
+        %tmp.41 = 40;
+        lputv %lineHeight.5 %tmp.41;
+        symbol [ lineHeight %lineHeight.5 41 12 22 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 43 8 ]
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_stmt:
+        symbol [ historyItems %tmp.43 43 12 24 ];
+        %tmp.43 = getv ? :historyItems;
+        symbol [ size %tmp.44 43 25 29 ];
+        %tmp.44 = getv function %tmp.43 :size;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        %tmp.46 = 0;
+        %tmp.47 = eq %tmp.45 %tmp.46;
+        bf %tmp.47 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_else_false;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_38_46_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 44 12 ]
+        %tmp.48 = lgetv %dc.1;
+        symbol [ dc %tmp.48 44 12 14 ];
+        symbol [ setFont %tmp.49 44 15 22 ];
+        %tmp.49 = getv function %tmp.48 :setFont;
+        symbol [ Graphics %tmp.50 44 23 31 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.51 44 32 42 ];
+        %tmp.51 = getv %tmp.50 :FONT_SMALL;
+        invoke %tmp.48 %tmp.49(%tmp.51);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 45 12 ]
+        %tmp.52 = lgetv %dc.1;
+        symbol [ dc %tmp.52 45 12 14 ];
+        symbol [ drawText %tmp.53 45 15 23 ];
+        %tmp.53 = getv function %tmp.52 :drawText;
+        %tmp.54 = lgetv %width.2;
+        symbol [ width %tmp.54 45 24 29 ];
+        %tmp.55 = 2;
+        %tmp.56 = div %tmp.54 %tmp.55;
+        %tmp.57 = lgetv %height.3;
+        symbol [ height %tmp.57 45 35 41 ];
+        %tmp.58 = 2;
+        %tmp.59 = div %tmp.57 %tmp.58;
+        %tmp.60 = "Aucune session";
+        symbol [ Graphics %tmp.61 45 65 73 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.62 45 74 93 ];
+        %tmp.62 = getv %tmp.61 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.52 %tmp.53(%tmp.56, %tmp.59, %tmp.60, %tmp.62);
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_38_46_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_else_false:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_46_15_64_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 47 12 ]
+        for @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_test @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_incr @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_init:
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_begin" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_end" ]
+        %i.6 = local;
+        symbol [ i %i.6 47 21 22 ];
+        %tmp.63 = 0;
+        lputv %i.6 %tmp.63;
+        symbol [ i %i.6 47 21 22 ];
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_test:
+        %tmp.64 = lgetv %i.6;
+        symbol [ i %tmp.64 47 28 29 ];
+        symbol [ historyItems %tmp.66 47 32 44 ];
+        %tmp.66 = getv ? :historyItems;
+        symbol [ size %tmp.67 47 45 49 ];
+        %tmp.67 = getv function %tmp.66 :size;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.69 = lt %tmp.64 %tmp.68;
+        bf %tmp.69 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_begin:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_58_63_12_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 48 16 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_58_63_12_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_58_63_12_stop" ]
+        %item.7 = local;
+        symbol [ item %item.7 48 20 24 ];
+        symbol [ historyItems %tmp.71 48 27 39 ];
+        %tmp.71 = getv ? :historyItems;
+        %tmp.72 = lgetv %i.6;
+        symbol [ i %tmp.72 48 40 41 ];
+        %tmp.73 = agetv %tmp.71 %tmp.72;
+        lputv %item.7 %tmp.73;
+        symbol [ item %item.7 48 20 24 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 50 16 ]
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_16_53_16_if_stmt:
+        %tmp.74 = lgetv %i.6;
+        symbol [ i %tmp.74 50 20 21 ];
+        symbol [ selectedItem %tmp.76 50 25 37 ];
+        %tmp.76 = getv ? :selectedItem;
+        %tmp.77 = eq %tmp.74 %tmp.76;
+        bf %tmp.77 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_16_53_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_16_53_16_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_39_53_16_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 51 20 ]
+        %tmp.78 = lgetv %dc.1;
+        symbol [ dc %tmp.78 51 20 22 ];
+        symbol [ setColor %tmp.79 51 23 31 ];
+        %tmp.79 = getv function %tmp.78 :setColor;
+        %tmp.80 = 50;
+        %tmp.81 = 50;
+        %tmp.82 = 100;
+        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.82);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 52 20 ]
+        %tmp.83 = lgetv %dc.1;
+        symbol [ dc %tmp.83 52 20 22 ];
+        symbol [ fillRectangle %tmp.84 52 23 36 ];
+        %tmp.84 = getv function %tmp.83 :fillRectangle;
+        %tmp.85 = 0;
+        %tmp.86 = lgetv %y.4;
+        symbol [ y %tmp.86 52 40 41 ];
+        %tmp.87 = 2;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        %tmp.89 = lgetv %width.2;
+        symbol [ width %tmp.89 52 47 52 ];
+        %tmp.90 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.90 52 54 64 ];
+        invoke %tmp.83 %tmp.84(%tmp.85, %tmp.88, %tmp.89, %tmp.90);
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_39_53_16_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_16_53_16_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_50_16_53_16_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 55 16 ]
+        %tmp.91 = lgetv %dc.1;
+        symbol [ dc %tmp.91 55 16 18 ];
+        symbol [ setColor %tmp.92 55 19 27 ];
+        %tmp.92 = getv function %tmp.91 :setColor;
+        %tmp.93 = 255;
+        %tmp.94 = 255;
+        %tmp.95 = 255;
+        invoke %tmp.91 %tmp.92(%tmp.93, %tmp.94, %tmp.95);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 56 16 ]
+        %tmp.96 = lgetv %dc.1;
+        symbol [ dc %tmp.96 56 16 18 ];
+        symbol [ setFont %tmp.97 56 19 26 ];
+        %tmp.97 = getv function %tmp.96 :setFont;
+        symbol [ Graphics %tmp.98 56 27 35 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.99 56 36 46 ];
+        %tmp.99 = getv %tmp.98 :FONT_SMALL;
+        invoke %tmp.96 %tmp.97(%tmp.99);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 58 16 ]
+        %tmp.100 = lgetv %dc.1;
+        symbol [ dc %tmp.100 58 16 18 ];
+        symbol [ drawText %tmp.101 58 19 27 ];
+        %tmp.101 = getv function %tmp.100 :drawText;
+        %tmp.102 = 10;
+        %tmp.103 = lgetv %y.4;
+        symbol [ y %tmp.103 58 32 33 ];
+        %tmp.104 = lgetv %item.7;
+        symbol [ item %tmp.104 58 35 39 ];
+        symbol [ date %tmp.105 58 40 44 ];
+        %tmp.105 = getv %tmp.104 :date;
+        symbol [ Graphics %tmp.106 58 46 54 ];
+        %tmp.106 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.107 58 55 72 ];
+        %tmp.107 = getv %tmp.106 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.100 %tmp.101(%tmp.102, %tmp.103, %tmp.105, %tmp.107);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 59 16 ]
+        %tmp.108 = lgetv %dc.1;
+        symbol [ dc %tmp.108 59 16 18 ];
+        symbol [ drawText %tmp.109 59 19 27 ];
+        %tmp.109 = getv function %tmp.108 :drawText;
+        %tmp.110 = lgetv %width.2;
+        symbol [ width %tmp.110 59 28 33 ];
+        %tmp.111 = 2;
+        %tmp.112 = div %tmp.110 %tmp.111;
+        %tmp.113 = lgetv %y.4;
+        symbol [ y %tmp.113 59 39 40 ];
+        %tmp.114 = lgetv %item.7;
+        symbol [ item %tmp.114 59 42 46 ];
+        symbol [ exerciseName %tmp.115 59 47 59 ];
+        %tmp.115 = getv %tmp.114 :exerciseName;
+        symbol [ Graphics %tmp.116 59 61 69 ];
+        %tmp.116 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.117 59 70 89 ];
+        %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.108 %tmp.109(%tmp.112, %tmp.113, %tmp.115, %tmp.117);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 60 16 ]
+        %tmp.118 = lgetv %dc.1;
+        symbol [ dc %tmp.118 60 16 18 ];
+        symbol [ drawText %tmp.119 60 19 27 ];
+        %tmp.119 = getv function %tmp.118 :drawText;
+        %tmp.120 = lgetv %width.2;
+        symbol [ width %tmp.120 60 28 33 ];
+        %tmp.121 = 60;
+        %tmp.122 = sub %tmp.120 %tmp.121;
+        %tmp.123 = lgetv %y.4;
+        symbol [ y %tmp.123 60 40 41 ];
+        %tmp.124 = lgetv %item.7;
+        symbol [ item %tmp.124 60 43 47 ];
+        symbol [ duration %tmp.125 60 48 56 ];
+        %tmp.125 = getv %tmp.124 :duration;
+        %tmp.126 = "min";
+        %tmp.127 = add %tmp.125 %tmp.126;
+        symbol [ Graphics %tmp.128 60 66 74 ];
+        %tmp.128 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.129 60 75 93 ];
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.118 %tmp.119(%tmp.122, %tmp.123, %tmp.127, %tmp.129);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 62 16 ]
+        %tmp.130 = lgetv %y.4;
+        symbol [ y %tmp.130 62 16 17 ];
+        %tmp.131 = lgetv %lineHeight.5;
+        symbol [ lineHeight %tmp.131 62 21 31 ];
+        %tmp.132 = add %tmp.130 %tmp.131;
+        lputv %y.4 %tmp.132;
+        symbol [ y %y.4 62 16 17 ];
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_58_63_12_stop:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_incr:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 47 ]
+        %tmp.135 = lgetv %i.6;
+        symbol [ i %tmp.135 47 53 54 ];
+        %tmp.136 = add %tmp.135 1;
+        lputv %i.6 %tmp.136;
+        symbol [ i %i.6 47 53 54 ];
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_test;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_47_12_63_12_for_end:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_46_15_64_8_stop:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_43_8_64_8_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 67 8 ]
+        %tmp.137 = lgetv %dc.1;
+        symbol [ dc %tmp.137 67 8 10 ];
+        symbol [ setFont %tmp.138 67 11 18 ];
+        %tmp.138 = getv function %tmp.137 :setFont;
+        symbol [ Graphics %tmp.139 67 19 27 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.140 67 28 37 ];
+        %tmp.140 = getv %tmp.139 :FONT_TINY;
+        invoke %tmp.137 %tmp.138(%tmp.140);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 68 8 ]
+        %tmp.141 = lgetv %dc.1;
+        symbol [ dc %tmp.141 68 8 10 ];
+        symbol [ drawText %tmp.142 68 11 19 ];
+        %tmp.142 = getv function %tmp.141 :drawText;
+        %tmp.143 = lgetv %width.2;
+        symbol [ width %tmp.143 68 20 25 ];
+        %tmp.144 = 2;
+        %tmp.145 = div %tmp.143 %tmp.144;
+        %tmp.146 = lgetv %height.3;
+        symbol [ height %tmp.146 68 31 37 ];
+        %tmp.147 = 10;
+        %tmp.148 = sub %tmp.146 %tmp.147;
+        %tmp.149 = "BACK: Retour";
+        symbol [ Graphics %tmp.150 68 60 68 ];
+        %tmp.150 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.151 68 69 88 ];
+        %tmp.151 = getv %tmp.150 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.141 %tmp.142(%tmp.145, %tmp.148, %tmp.149, %tmp.151);
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_25_29_69_4_stop:
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 71; @symbol_functiondef = [onKeyPress,71,13,23]; @symbol_param<0> = [key,71,24,27]; ]
+    function onKeyPress(key) {
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_71_29_86_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 72 8 ]
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_stmt:
+        %tmp.1 = lgetv %key;
+        symbol [ key %tmp.1 72 12 15 ];
+        symbol [ Key %tmp.3 72 19 22 ];
+        %tmp.3 = getv ? :Key;
+        symbol [ BACK %tmp.4 72 23 27 ];
+        %tmp.4 = getv %tmp.3 :BACK;
+        %tmp.5 = eq %tmp.1 %tmp.4;
+        bf %tmp.5 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_29_76_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 73 12 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_29_76_8_start" "C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_29_76_8_stop" ]
+        %mainMenu.1 = local;
+        symbol [ mainMenu %mainMenu.1 73 16 24 ];
+        symbol [ MainMenuView %tmp.9 73 31 43 ];
+        %tmp.9 = getv ? :MainMenuView;
+        %tmp.6 = newc %tmp.9 ();
+        lputv %mainMenu.1 %tmp.6;
+        symbol [ mainMenu %mainMenu.1 73 16 24 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 74 12 ]
+        symbol [ View %tmp.11 74 12 16 ];
+        %tmp.11 = getv ? :View;
+        symbol [ setView %tmp.12 74 17 24 ];
+        %tmp.12 = getv function %tmp.11 :setView;
+        %tmp.13 = lgetv %mainMenu.1;
+        symbol [ mainMenu %tmp.13 74 25 33 ];
+        invoke %tmp.11 %tmp.12(%tmp.13);
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 75 12 ]
+        %tmp.14 = true;
+        ret %tmp.14;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_29_76_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 76 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_stmt:
+        %tmp.15 = lgetv %key;
+        symbol [ key %tmp.15 76 19 22 ];
+        symbol [ Key %tmp.17 76 26 29 ];
+        %tmp.17 = getv ? :Key;
+        symbol [ UP %tmp.18 76 30 32 ];
+        %tmp.18 = getv %tmp.17 :UP;
+        %tmp.19 = eq %tmp.15 %tmp.18;
+        bf %tmp.19 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_false;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_34_80_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 77 12 ]
+        symbol [ selectedItem %tmp.21 77 28 40 ];
+        %tmp.21 = getv ? :selectedItem;
+        %tmp.22 = 1;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        symbol [ historyItems %tmp.25 77 47 59 ];
+        %tmp.25 = getv ? :historyItems;
+        symbol [ size %tmp.26 77 60 64 ];
+        %tmp.26 = getv function %tmp.25 :size;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = add %tmp.23 %tmp.27;
+        symbol [ historyItems %tmp.30 77 70 82 ];
+        %tmp.30 = getv ? :historyItems;
+        symbol [ size %tmp.31 77 83 87 ];
+        %tmp.31 = getv function %tmp.30 :size;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        %tmp.33 = mod %tmp.28 %tmp.32;
+        symbol [ selectedItem ? 77 12 24 ];
+        putv self :selectedItem %tmp.33;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 78 12 ]
+        %tmp.34 = self;
+        symbol [ updateDisplay %tmp.35 78 12 25 ];
+        %tmp.35 = getv function %tmp.34 :updateDisplay;
+        invoke %tmp.34 %tmp.35();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 79 12 ]
+        %tmp.36 = true;
+        ret %tmp.36;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_34_80_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_false:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 80 15 ]
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_15_84_8_if_stmt:
+        %tmp.37 = lgetv %key;
+        symbol [ key %tmp.37 80 19 22 ];
+        symbol [ Key %tmp.39 80 26 29 ];
+        %tmp.39 = getv ? :Key;
+        symbol [ DOWN %tmp.40 80 30 34 ];
+        %tmp.40 = getv %tmp.39 :DOWN;
+        %tmp.41 = eq %tmp.37 %tmp.40;
+        bf %tmp.41 @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_15_84_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_15_84_8_if_true:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_36_84_8_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 81 12 ]
+        symbol [ selectedItem %tmp.43 81 28 40 ];
+        %tmp.43 = getv ? :selectedItem;
+        %tmp.44 = 1;
+        %tmp.45 = add %tmp.43 %tmp.44;
+        symbol [ historyItems %tmp.47 81 48 60 ];
+        %tmp.47 = getv ? :historyItems;
+        symbol [ size %tmp.48 81 61 65 ];
+        %tmp.48 = getv function %tmp.47 :size;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        %tmp.50 = mod %tmp.45 %tmp.49;
+        symbol [ selectedItem ? 81 12 24 ];
+        putv self :selectedItem %tmp.50;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 82 12 ]
+        %tmp.51 = self;
+        symbol [ updateDisplay %tmp.52 82 12 25 ];
+        %tmp.52 = getv function %tmp.51 :updateDisplay;
+        invoke %tmp.51 %tmp.52();
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 83 12 ]
+        %tmp.53 = true;
+        ret %tmp.53;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_36_84_8_stop:
+        goto @C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_15_84_8_if_end;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_80_15_84_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_76_15_84_8_if_end:
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_72_8_84_8_if_end:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 85 8 ]
+        %tmp.54 = false;
+        ret %tmp.54;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_71_29_86_4_stop:
+    }
+}
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 90; @symbol_classdef = [HistoryItem,90,6,17]; ]
+class HistoryItem {
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 90; ]
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 90; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 91; @position = 8; @symbol_vardef = [exerciseName,91,8,20]; ]
+    var exerciseName;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 92; @position = 8; @symbol_vardef = [date,92,8,12]; ]
+    var date;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 93; @position = 8; @symbol_vardef = [duration,93,8,16]; ]
+    var duration;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 94; @position = 8; @symbol_vardef = [totalTime,94,8,17]; ]
+    var totalTime;
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 96; @symbol_functiondef = [initialize,96,13,23]; @symbol_param<0> = [name,96,24,28]; @symbol_param<1> = [dateStr,96,30,37]; @symbol_param<2> = [dur,96,39,42]; @symbol_param<3> = [total,96,44,49]; ]
+    function initialize(name, dateStr, dur, total) as Void {
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_96_51_101_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 97 8 ]
+        %tmp.1 = lgetv %name;
+        symbol [ name %tmp.1 97 23 27 ];
+        symbol [ exerciseName ? 97 8 20 ];
+        putv self :exerciseName %tmp.1;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 98 8 ]
+        %tmp.2 = lgetv %dateStr;
+        symbol [ dateStr %tmp.2 98 15 22 ];
+        symbol [ date ? 98 8 12 ];
+        putv self :date %tmp.2;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 99 8 ]
+        %tmp.3 = lgetv %dur;
+        symbol [ dur %tmp.3 99 19 22 ];
+        symbol [ duration ? 99 8 16 ];
+        putv self :duration %tmp.3;
+[ "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc" 100 8 ]
+        %tmp.4 = lgetv %total;
+        symbol [ total %tmp.4 100 20 25 ];
+        symbol [ totalTime ? 100 8 17 ];
+        putv self :totalTime %tmp.4;
+C__Users_genti_Dev_DiveZimut_source_views_HistoryView_mc_96_51_101_4_stop:
+    }
+}
+[ @file = "C:\Users\genti\Dev\DiveZimut\source\views\HistoryView.mc"; @line = 1; ]
+<init> {
+}
