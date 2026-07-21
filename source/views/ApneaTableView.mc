@@ -8,13 +8,12 @@ class ApneaTableView extends View {
     var currentTable;
     var currentCycle;
     var totalCycles;
-    var currentPhase;  // 0=PREP, 1=APNEA, 2=RECOVERY
+    var currentPhase;
     var timeLeft;
     var timer;
     var userSettings;
-    var maxApneaTime;  // User's max apnea time in seconds
+    var maxApneaTime;
     var isRunning;
-    var startTime;
     
     // Phase constants
     var PHASE_PREP = 0;
@@ -29,7 +28,9 @@ class ApneaTableView extends View {
         currentPhase = PHASE_PREP;
         userSettings = UserSettings.load();
         maxApneaTime = userSettings.maxApneaTime;
-        if (maxApneaTime <= 0) maxApneaTime = 120;  // Default 2:00 if not set
+        if (maxApneaTime <= 0) {
+            maxApneaTime = 120;  // Default 2:00 if not set
+        }
         isRunning = false;
     }
     
@@ -45,27 +46,12 @@ class ApneaTableView extends View {
     
     function startNextPhase() {
         if (currentCycle >= totalCycles) {
-            // Table completed
             stopTable();
             return;
         }
         
-        if (currentTable.tableType == "MIXED") {
-            // For mixed tables, alternate between CO2 and O2 logic
-            if (currentCycle % 2 == 0) {
-                // CO2 phase
-                currentPhase = PHASE_PREP;
-                timeLeft = 5;  // 5s preparation
-            } else {
-                // O2 phase
-                currentPhase = PHASE_PREP;
-                timeLeft = 5;
-            }
-        } else {
-            currentPhase = PHASE_PREP;
-            timeLeft = 5;  // 5s preparation
-        }
-        
+        currentPhase = PHASE_PREP;
+        timeLeft = 5;  // 5s preparation
         startTimer();
         updateDisplay();
     }
@@ -79,7 +65,9 @@ class ApneaTableView extends View {
     }
     
     function onTimerFired() {
-        if (!isRunning) return;
+        if (!isRunning) {
+            return;
+        }
         
         timeLeft--;
         updateDisplay();
@@ -121,7 +109,9 @@ class ApneaTableView extends View {
     
     function pauseTable() {
         isRunning = false;
-        timer.stop();
+        if (timer != null) {
+            timer.stop();
+        }
         updateDisplay();
     }
     
@@ -142,7 +132,6 @@ class ApneaTableView extends View {
     }
     
     function saveToHistory() {
-        // Save table session to history
         System.println("Table completed: " + currentTable.name + " - Cycles: " + currentCycle + "/" + totalCycles);
     }
     
@@ -169,11 +158,11 @@ class ApneaTableView extends View {
         dc.setFont(Graphics.FONT_LARGE);
         var phaseText = "";
         if (currentPhase == PHASE_PREP) {
-            phaseText = "Prépare";
+            phaseText = "Prepare";
         } else if (currentPhase == PHASE_APNEA) {
-            phaseText = "Apnée";
+            phaseText = "Apnee";
         } else if (currentPhase == PHASE_RECOVERY) {
-            phaseText = "Récupère";
+            phaseText = "Recupere";
         }
         dc.drawText(width / 2, height / 2 - 15, phaseText, Graphics.TEXT_JUSTIFY_CENTER);
         
@@ -215,10 +204,10 @@ class ApneaTableView extends View {
         dc.setFont(Graphics.FONT_TINY);
         if (currentPhase == PHASE_PREP) {
             var nextDuration = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
-            dc.drawText(width / 2, height - 20, "Prochaine apnée: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height - 20, "Prochaine apnee: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
         } else if (currentPhase == PHASE_APNEA) {
             var nextDuration = currentTable.getRecoveryDurationForCycle(currentCycle);
-            dc.drawText(width / 2, height - 20, "Récupération: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height - 20, "Recuperation: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
         } else {
             dc.drawText(width / 2, height - 20, "Prochain cycle: " + (currentCycle + 2) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_CENTER);
         }
@@ -232,7 +221,9 @@ class ApneaTableView extends View {
     }
     
     function formatTime(seconds) {
-        if (seconds < 0) return "00:00";
+        if (seconds < 0) {
+            return "00:00";
+        }
         var mins = (int)(seconds / 60);
         var secs = seconds % 60;
         if (mins > 0) {
