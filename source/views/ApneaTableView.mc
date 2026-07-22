@@ -4,65 +4,69 @@ using Toybox.System;
 using Toybox.UI;
 
 // Apnea Table View - handles CO2, O2, and Mixed tables execution
-class ApneaTableView extends View {
+class ApneaTableView extends BaseExerciseView {
     var currentTable;
     var currentCycle;
     var totalCycles;
     var currentPhase;
-    var timeLeft;
-    var timer;
-    var userSettings;
     var maxApneaTime;
-    var isRunning;
+    var nextPhaseDuration;
     
+    // Phase constants
     var PHASE_PREP = 0;
     var PHASE_APNEA = 1;
     var PHASE_RECOVERY = 2;
     
+    /**
+     * Initializes the apnea table view
+     * @param {ApneaTable} table - The apnea table to perform
+     */
     function initialize(table) {
-        View.initialize();
+        BaseExerciseView.initialize();
         currentTable = table;
         currentCycle = 0;
         totalCycles = table.defaultCycles;
         currentPhase = PHASE_PREP;
-        userSettings = UserSettings.load();
         maxApneaTime = userSettings.maxApneaTime;
         if (maxApneaTime <= 0) {
             maxApneaTime = 120;
         }
-        isRunning = false;
     }
     
     function onStart() {
-        startTable();
+        BaseExerciseView.onStart();
     }
     
-    function startTable() {
+    /**
+     * Starts the table execution
+     */
+    function startExercise() {
         currentCycle = 0;
+        totalElapsedTime = 0;
         isRunning = true;
+        startTime = System.getClockTime().getSecondsSinceEpoch();
         startNextPhase();
     }
     
+    /**
+     * Starts the next phase of the table
+     */
     function startNextPhase() {
         if (currentCycle >= totalCycles) {
-            stopTable();
+            stopExercise();
             return;
         }
         
         currentPhase = PHASE_PREP;
-        timeLeft = 5;
-        startTimer();
+        timeLeft = 5; // Preparation time
+        nextPhaseDuration = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
+        startTimer(timeLeft);
         updateDisplay();
     }
     
-    function startTimer() {
-        if (timer != null) {
-            timer.stop();
-        }
-        timer = new Timer();
-        timer.start(1000, this, :onTimerFired);
-    }
-    
+    /**
+     * Timer callback
+     */
     function onTimerFired() {
         if (!isRunning) {
             return;
@@ -72,11 +76,8 @@ class ApneaTableView extends View {
         updateDisplay();
         
         if (timeLeft <= 0) {
-            timer.stop();
-            
-            if (userSettings.enableVibration) {
-                System.vibrate(150);
-            }
+            stopTimer();
+            playVibration();
             
             if (currentPhase == PHASE_PREP) {
                 startApneaPhase();
@@ -89,66 +90,96 @@ class ApneaTableView extends View {
         }
     }
     
+    /**
+     * Starts the apnea phase
+     */
     function startApneaPhase() {
         currentPhase = PHASE_APNEA;
-        var apneaDuration = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
-        timeLeft = apneaDuration;
-        startTimer();
+        timeLeft = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
+        nextPhaseDuration = currentTable.getRecoveryDurationForCycle(currentCycle);
+        startTimer(timeLeft);
         updateDisplay();
     }
     
+    /**
+     * Starts the recovery phase
+     */
     function startRecoveryPhase() {
         currentPhase = PHASE_RECOVERY;
-        var recoveryDuration = currentTable.getRecoveryDurationForCycle(currentCycle);
-        timeLeft = recoveryDuration;
-        startTimer();
+        timeLeft = currentTable.getRecoveryDurationForCycle(currentCycle);
+        nextPhaseDuration = 5; // Next prep time
+        startTimer(timeLeft);
         updateDisplay();
     }
     
-    function pauseTable() {
-        isRunning = false;
-        if (timer != null) {
-            timer.stop();
+    /**
+     * Pauses the table
+     */
+    function pauseExercise() {
+        BaseExerciseView.pauseExercise();
+        var now = System.getClockTime().getSecondsSinceEpoch();
+        totalElapsedTime += (now - startTime);
+    }
+    
+    /**
+     * Resumes the table
+     */
+    function resumeExercise() {
+        BaseExerciseView.resumeExercise();
+        startTime = System.getClockTime().getSecondsSinceEpoch();
+        
+        // Restart current phase with remaining time
+        if (currentPhase == PHASE_PREP) {
+            startNextPhase();
+        } else if (currentPhase == PHASE_APNEA) {
+            startApneaPhase();
+        } else if (currentPhase == PHASE_RECOVERY) {
+            startRecoveryPhase();
         }
-        updateDisplay();
     }
     
-    function resumeTable() {
-        isRunning = true;
-        startTimer();
-        updateDisplay();
+    /**
+     * Stops the table
+     */
+    function stopExercise() {
+        BaseExerciseView.stopExercise();
     }
     
-    function stopTable() {
-        isRunning = false;
-        if (timer != null) {
-            timer.stop();
-        }
-        saveToHistory();
-        var mainMenu = new MainMenuView();
-        View.setView(mainMenu);
-    }
-    
+    /**
+     * Saves session to history
+     */
     function saveToHistory() {
+        var now = System.getClockTime().getSecondsSinceEpoch();
+        var sessionDuration = now - startTime;
+        HistoryManager.saveApneaTableSession(currentTable.name, currentCycle, sessionDuration);
         System.println("Table completed: " + currentTable.name + " - Cycles: " + currentCycle + "/" + totalCycles);
     }
     
+    /**
+     * Updates the display
+     */
     function updateDisplay() {
         var dc = View.getDC();
         var width = dc.getWidth();
         var height = dc.getHeight();
         
+        // Clear screen
         dc.setColor(0, 0, 0);
         dc.fillRectangle(0, 0, width, height);
         
+        // Draw header
         dc.setColor(255, 255, 255);
         dc.setFont(Graphics.FONT_SMALL);
         dc.drawText(width / 2, 10, currentTable.name, Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width / 2, 25, currentTable.getDifficultyName(), Graphics.TEXT_JUSTIFY_CENTER);
         
-        dc.setFont(Graphics.FONT_TINY);
-        dc.drawText(10, 40, "Cycle: " + (currentCycle + 1) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_LEFT);
+        // Draw cycle counter
+        if (userSettings.showCycleCounter) {
+            dc.setFont(Graphics.FONT_TINY);
+            dc.drawText(10, 40, "Cycle: " + (currentCycle + 1) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_LEFT);
+        }
         
+        // Draw current phase
         dc.setFont(Graphics.FONT_LARGE);
         var phaseText = "";
         if (currentPhase == PHASE_PREP) {
@@ -160,13 +191,16 @@ class ApneaTableView extends View {
         }
         dc.drawText(width / 2, height / 2 - 15, phaseText, Graphics.TEXT_JUSTIFY_CENTER);
         
+        // Draw timer
         dc.setFont(Graphics.FONT_XLARGE);
         dc.drawText(width / 2, height / 2 + 15, formatTime(timeLeft), Graphics.TEXT_JUSTIFY_CENTER);
         
+        // Draw progress bar
         var barWidth = width - 40;
         var barHeight = 8;
         var barY = height - 40;
         var phaseDuration = 0;
+        
         if (currentPhase == PHASE_PREP) {
             phaseDuration = 5;
         } else if (currentPhase == PHASE_APNEA) {
@@ -175,61 +209,67 @@ class ApneaTableView extends View {
             phaseDuration = currentTable.getRecoveryDurationForCycle(currentCycle);
         }
         
-        var originalDuration = phaseDuration;
-        var progress = 1.0 - (timeLeft / (float)originalDuration);
+        var progress = 1.0 - (timeLeft / (float)phaseDuration);
         
+        // Draw background
         dc.setColor(50, 50, 50);
         dc.fillRectangle(20, barY, barWidth, barHeight);
         
+        // Draw progress with phase-specific color
         if (currentPhase == PHASE_PREP) {
-            dc.setColor(255, 255, 0);
+            drawProgressBar(dc, 20, barY, barWidth, barHeight, progress, 0xFFFF00); // Yellow
         } else if (currentPhase == PHASE_APNEA) {
-            dc.setColor(255, 0, 0);
+            drawProgressBar(dc, 20, barY, barWidth, barHeight, progress, 0xFF0000); // Red
         } else {
-            dc.setColor(0, 255, 0);
+            drawProgressBar(dc, 20, barY, barWidth, barHeight, progress, 0x00FF00); // Green
         }
-        dc.fillRectangle(20, barY, (int)(barWidth * progress), barHeight);
         
+        // Draw next phase info
         dc.setFont(Graphics.FONT_TINY);
+        dc.setColor(200, 200, 200);
         if (currentPhase == PHASE_PREP) {
-            var nextDuration = currentTable.getApneaDurationForCycle(currentCycle, maxApneaTime);
-            dc.drawText(width / 2, height - 20, "Prochaine apnee: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height - 20, "Prochaine apnee: " + formatTime(nextPhaseDuration), Graphics.TEXT_JUSTIFY_CENTER);
         } else if (currentPhase == PHASE_APNEA) {
-            var nextDuration = currentTable.getRecoveryDurationForCycle(currentCycle);
-            dc.drawText(width / 2, height - 20, "Recuperation: " + formatTime(nextDuration), Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height - 20, "Recuperation: " + formatTime(nextPhaseDuration), Graphics.TEXT_JUSTIFY_CENTER);
         } else {
-            dc.drawText(width / 2, height - 20, "Prochain cycle: " + (currentCycle + 2) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_CENTER);
+            if (currentCycle + 1 < totalCycles) {
+                dc.drawText(width / 2, height - 20, "Prochain cycle: " + (currentCycle + 2) + "/" + totalCycles, Graphics.TEXT_JUSTIFY_CENTER);
+            } else {
+                dc.drawText(width / 2, height - 20, "Fin de la table", Graphics.TEXT_JUSTIFY_CENTER);
+            }
         }
         
+        // Draw table type
+        dc.setFont(Graphics.FONT_TINY);
+        dc.setColor(150, 150, 150);
+        dc.drawText(10, height - 10, currentTable.getTableTypeName(), Graphics.TEXT_JUSTIFY_LEFT);
+        
+        // Draw pause indicator
         if (!isRunning) {
             dc.setColor(255, 255, 0);
             dc.setFont(Graphics.FONT_SMALL);
-            dc.drawText(width / 2, height - 10, "PAUSE", Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height - 35, "PAUSE", Graphics.TEXT_JUSTIFY_CENTER);
         }
+        
+        // Draw instructions
+        dc.setFont(Graphics.FONT_TINY);
+        dc.setColor(100, 100, 100);
+        dc.drawText(width / 2, height - 5, "UP/DOWN: Pause/Reprendre", Graphics.TEXT_JUSTIFY_CENTER);
     }
     
-    function formatTime(seconds) {
-        if (seconds < 10) {
-            return "00:0" + seconds;
-        } else if (seconds < 60) {
-            return "00:" + seconds;
-        } else {
-            var minutes = (int)(seconds / 60);
-            var secs = seconds % 60;
-            return minutes + ":" + (secs < 10 ? "0" + secs : secs);
-        }
-    }
-    
+    /**
+     * Handles key press
+     */
     function onKeyPress(key) {
         if (key == Key.BACK) {
-            pauseTable();
-            stopTable();
+            pauseExercise();
+            stopExercise();
             return true;
         } else if (key == Key.UP || key == Key.DOWN) {
             if (isRunning) {
-                pauseTable();
+                pauseExercise();
             } else {
-                resumeTable();
+                resumeExercise();
             }
             return true;
         }

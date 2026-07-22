@@ -1,27 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <string id="app_name">DiveZimut</string>
-    <string id="app_description">Exercices de respiration guidés pour Garmin</string>
+    <string id="app_description">Exercices de respiration guidees et tables d'apnee pour Garmin Connect IQ</string>
     
     <!-- Exercise names -->
     <string id="exercise_square">Carré</string>
     <string id="exercise_triangle">Triangle</string>
     <string id="exercise_478">4-7-8</string>
-    <string id="exercise_coherence">Cohérence</string>
+    <string id="exercise_coherence">Cohérence Cardiaque</string>
+    
+    <!-- Apnea table names -->
+    <string id="table_co2_beginner">CO2 Débutant</string>
+    <string id="table_co2_intermediate">CO2 Intermédiaire</string>
+    <string id="table_co2_advanced">CO2 Avancé</string>
+    <string id="table_co2_pyramid">CO2 Pyramide</string>
+    <string id="table_o2_beginner">O2 Débutant</string>
+    <string id="table_o2_intermediate">O2 Intermédiaire</string>
+    <string id="table_o2_advanced">O2 Avancé</string>
+    <string id="table_o2_progressive">O2 Progressive</string>
+    <string id="table_mixed_balanced">Mixte Équilibrée</string>
+    <string id="table_mixed_advanced">Mixte Avancée</string>
     
     <!-- Menu items -->
     <string id="menu_settings">Réglages</string>
     <string id="menu_history">Historique</string>
     <string id="menu_about">À propos</string>
+    <string id="menu_recommendations">Recommandations</string>
+    <string id="menu_all">Tout afficher</string>
     
     <!-- Settings -->
     <string id="settings_default_duration">Durée par défaut</string>
     <string id="settings_favorite_exercise">Exercice favori</string>
     <string id="settings_vibration">Vibrations</string>
+    <string id="settings_sound">Son</string>
+    <string id="settings_max_apnea_time">Temps max apnée</string>
+    <string id="settings_co2_tolerance">Tolérance CO2</string>
+    <string id="settings_o2_efficiency">Efficacité O2</string>
+    <string id="settings_favorite_table">Table favorite</string>
+    <string id="settings_show_phase_timer">Afficher timer</string>
+    <string id="settings_show_cycle_counter">Afficher compteur</string>
+    <string id="settings_reset">Réinitialiser</string>
+    <string id="settings_save">Sauvegarder</string>
     
     <!-- Instructions -->
     <string id="instruction_inspire">Inspire</string>
     <string id="instruction_hold_full">Retien (plein)</string>
     <string id="instruction_expire">Expire</string>
     <string id="instruction_hold_empty">Retien (vide)</string>
+    <string id="instruction_prepare">Prépare</string>
+    <string id="instruction_apnea">Apnée</string>
+    <string id="instruction_recover">Récupère</string>
+    
+    <!-- Phase names -->
+    <string id="phase_prep">Préparation</string>
+    <string id="phase_active">Actif</string>
+    <string id="phase_recovery">Récupération</string>
+    
+    <!-- Difficulty levels -->
+    <string id="difficulty_beginner">Débutant</string>
+    <string id="difficulty_intermediate">Intermédiaire</string>
+    <string id="difficulty_advanced">Avancé</string>
+    
+    <!-- Table types -->
+    <string id="table_type_co2">CO2</string>
+    <string id="table_type_o2">O2</string>
+    <string id="table_type_mixed">Mixte</string>
+    
+    <!-- User levels -->
+    <string id="user_level_beginner">Débutant</string>
+    <string id="user_level_intermediate">Intermédiaire</string>
+    <string id="user_level_advanced">Avancé</string>
+    
+    <!-- Statistics -->
+    <string id="stats_total_sessions">Sessions totales</string>
+    <string id="stats_total_time">Temps total</string>
+    <string id="stats_average_time">Moyenne/session</string>
+    <string id="stats_by_type">Par type</string>
+    <string id="stats_respiration">Respiration</string>
+    <string id="stats_apnea">Apnée</string>
+    
+    <!-- Messages -->
+    <string id="msg_no_history">Aucune session</string>
+    <string id="msg_paused">PAUSE</string>
+    <string id="msg_up_down_toggle">UP/DOWN: Pause/Reprendre</string>
+    <string id="msg_back_exit">BACK: Quitter</string>
+    <string id="msg_up_down_navigate">UP/DOWN: Naviguer</string>
+    <string id="msg_enter_select">ENTER: Sélectionner</string>
+    
+    <!-- About -->
+    <string id="about_version">v2.0.0</string>
+    <string id="about_description">Exercices de respiration et tables d'apnée pour montres Garmin</string>
+    <string id="about_developer">Développé par WildZimut</string>
+    <string id="about_contact">charlie@wildzimut.com</string>
+    <string id="about_github">github.com/CharlieG42/DiveZimut</string>
+    <string id="about_license">Licence: MIT</string>
+    <string id="about_tagline">Respirez mieux, plongez plus loin</string>
 </resources>

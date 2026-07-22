@@ -1,26 +1,35 @@
-# Connect IQ
+# Connect IQ build artifacts
+bin/
 *.prg
 *.iq
-*.bin
-*.srec
+*.mbc
+*.mbf
+*.mbi
 
-# IDE
+# IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
 
-# OS
+# OS specific files
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-build/
-dist/
-
-# Logs
+# Log files
 *.log
 
-# Environment
-.env
-.env.local
+# Temporary files
+tmp/
+temp/
+
+# Local configuration
+dveloper_key
+monkey.jungle
+
+# Build output
+*.class
+
+# Dependency directories
+lib/
