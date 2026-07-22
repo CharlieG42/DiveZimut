@@ -211,10 +211,10 @@ C__Users_genti_Dev_DiveZimut_source_views_AboutView_mc_15_29_51_4_start:
         %tmp.74 = div %tmp.72 %tmp.73;
         %tmp.75 = lgetv %y.4;
         symbol [ y %tmp.75 40 31 32 ];
-        %tmp.76 = "pour Garmin Instinct 2X";
-        symbol [ Graphics %tmp.77 40 61 69 ];
+        %tmp.76 = "et tables d apnee";
+        symbol [ Graphics %tmp.77 40 55 63 ];
         %tmp.77 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.78 40 70 89 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.78 40 64 83 ];
         %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.70 %tmp.71(%tmp.74, %tmp.75, %tmp.76, %tmp.78);
 [ "C:\Users\genti\Dev\DiveZimut\source\views\AboutView.mc" 41 8 ]

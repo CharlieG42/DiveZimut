@@ -22,27 +22,27 @@ C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_6_26_8_4_stop:
     }
     [ @file = "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc"; @line = 10; @symbol_functiondef = [onStart,10,13,20]; ]
     function onStart() {
-C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_14_4_start:
-[ "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc" 12 8 ]
-        [ "C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_14_4_start" "C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_14_4_stop" ]
+C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_13_4_start:
+[ "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc" 11 8 ]
+        [ "C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_13_4_start" "C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_13_4_stop" ]
         %mainMenu.1 = local;
-        symbol [ mainMenu %mainMenu.1 12 12 20 ];
-        symbol [ MainMenuView %tmp.4 12 27 39 ];
+        symbol [ mainMenu %mainMenu.1 11 12 20 ];
+        symbol [ MainMenuView %tmp.4 11 27 39 ];
         %tmp.4 = getv ? :MainMenuView;
         %tmp.1 = newc %tmp.4 ();
         lputv %mainMenu.1 %tmp.1;
-        symbol [ mainMenu %mainMenu.1 12 12 20 ];
-[ "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc" 13 8 ]
-        symbol [ View %tmp.6 13 8 12 ];
+        symbol [ mainMenu %mainMenu.1 11 12 20 ];
+[ "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc" 12 8 ]
+        symbol [ View %tmp.6 12 8 12 ];
         %tmp.6 = getv ? :View;
-        symbol [ setView %tmp.7 13 13 20 ];
+        symbol [ setView %tmp.7 12 13 20 ];
         %tmp.7 = getv function %tmp.6 :setView;
         %tmp.8 = lgetv %mainMenu.1;
-        symbol [ mainMenu %tmp.8 13 21 29 ];
+        symbol [ mainMenu %tmp.8 12 21 29 ];
         invoke %tmp.6 %tmp.7(%tmp.8);
-C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_14_4_stop:
+C__Users_genti_Dev_DiveZimut_source_DiveZimutApp_mc_10_23_13_4_stop:
     }
-    [ @file = "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc"; @line = 16; @symbol_functiondef = [onStop,16,13,19]; ]
+    [ @file = "C:\Users\genti\Dev\DiveZimut\source\DiveZimutApp.mc"; @line = 15; @symbol_functiondef = [onStop,15,13,19]; ]
     function onStop() {
     }
 }
